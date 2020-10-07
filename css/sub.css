@@ -6,7 +6,7 @@
 .company_h2::after{background: url("../images/introduce/company-h2-bg.jpg");}
 .patchnote_h2::after{background: url("../images/patchnote/patch-h2-bg.jpg") no-repeat center / cover;}
 #container > section{width: 100%;height: calc(100vh - 60px);}
-#container section h3{font-family: koverwatch, "맑은 고딕", "Malgun Gothic", sans-serif;font-size: 50px;letter-spacing: 1px;}
+#container section h3{font-family: koverwatch, "맑은 고딕", "Malgun Gothic", sans-serif;font-size: 50px;letter-spacing: 1px;font-weight: 400;}
 
 .read_more {position: relative;display: inline-block;transition: all 0.3s ease;text-align: center;font-weight: 600;color: #000;padding: 10px 25px;border-radius: 5px;width: 130px;height: 40px;line-height: 42px;padding: 0;border: none;background: #fff;margin-top: 60px;}
 .read_more:hover,.read_more:focus {color: #fff;background: transparent;}
@@ -228,4 +228,41 @@
 
 
 /* patchnote */
+    /* 패치 하이라이트 */
 #patchHL{background: #000000;}
+#patchHL .area{padding-top: 100px;}
+#patchHL .area>ul{margin-top: 50px;}
+#patchHL .area>ul>li{}
+#patchHL .area>ul>li+li{margin-top: 50px;}
+#patchHL .area>ul>li::after{content:"";display: block;clear: both;}
+#patchHL .area>ul>li>strong{float:left;font-size: 30px;font-weight: 400;padding-top: 40px;margin-right: 97px;}
+#patchHL .area>ul>li:last-of-type>strong{margin-right: 125px;}
+#patchHL .area>ul>li>ul{float: left;}
+#patchHL .area>ul>li>ul::after{content:"";display: block;clear: both;}
+#patchHL .area>ul>li>ul>li{float:left;text-align: center;}
+#patchHL .area>ul>li>ul>li+li{margin-left: 150px;}
+#patchHL .area>ul>li>ul>li>p{margin-top: 20px;}
+
+    /* 지형 변경점 */
+#patchMap{background: #fff;color: #000000;}
+#patchMap .area{padding-top: 60px;}
+#patchMap .area h3{text-align: center;}
+#patchMap .area #mapTab{width: 1176px;height: 543px;margin: 140px auto;}
+#mapTab .tablist{}
+#mapTab .tablist .tab{float:left;width: 392px;height: 60px;line-height: 60px;text-align: center;font-size: 20px;cursor: pointer;box-sizing: border-box;background: #000;color: #fff;}
+#mapTab .tablist .tab.active{background: #355851;}
+#mapTab .tablist .tab+.tab{border-left: 1px solid #ccc;}
+#mapTab .tabpanel{display: none;margin-top: 60px;}
+#mapTab .tabpanel.active{display: block;}
+#mapTab .tabpanel img{width: 750px;height: 422px;float:left;}
+#mapTab .tabpanel p{float: left;width: 391px;font-weight: 500;font-size: 16px;margin-left: 35px;}
+
+#patchWeapon{text-align: center;color: #000;text-align: left;}
+#patchWeapon .weapon_list{margin-top: 35px;}
+#patchWeapon .weapon_list li+li{margin-top: 40px;}
+#patchWeapon .weapon_list li::after{content:"";display: block;clear: both;}
+#patchWeapon .weapon_list img{float: left;width: 400px;height: 224px;}
+#patchWeapon .weapon_list .weapon_txt{float: left;padding-left: 52px;}
+#patchWeapon .weapon_list .weapon_txt strong{display: inline-block;font-weight: 600;font-size: 24px;color: #355851;margin-bottom: 20px;}
+#patchWeapon .weapon_list .weapon_txt ul li,#patchWeapon .weapon_list .weapon_txt p{font-size: 16px;line-height: 20px;}
+#patchWeapon .weapon_list .weapon_txt ul li+li{margin-top: 14px;}
