@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>league : PUBG</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/sub.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/jquery.bxslider.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/league.js"></script>
+    <script>
+        $(function(){
+            $('.team_slider').bxSlider({
+                    mode: 'fade',
+                    prevText: '이전 슬라이더 보기',
+                    nextText: '다음 슬라이더 보기',
+                    ariaLive: true,		//스크린리더 사용자에게 변경된 정보를 알릴지 여부
+                    pagerCustom: ".teamslider_pager",
+            });
+            $('#leagueTeam .bx-controls-direction a').wrapInner('<span class="blind_b"></span>');
+        });
+    </script>
+</head>
+<body>
+    <div id="skip">
+        <a href="#container">본문 바로가기</a>
+    </div>
+    <!-- header -->
+    <header id="header">
+        <div class="header_top">
+            <h1 class="logo"><a href="../index.html"><img src="../images/common/index_logo.png" alt="PUBG"></a></h1>
+        </div>
+        <div class="header_btm font2">
+            <div class="util">
+                <div class="lang">
+                    <button><span class="blind_b">language</span></button>
+                    <ul>
+                        <li><a href="#">KOR</a></li>
+                        <li><a href="#">ENG</a></li>
+                        <li><a href="#">JAP</a></li>
+                        <li><a href="#">CHI</a></li>
+                    </ul>
+                </div>
+                <button class="login_btn" type="button" aria-haspopup="true" title="로그인 팝업창 열기" data-href="#login_box">LOGIN</button>
+                <a class="buynow" href="buynow.html">BUY NOW</a>
+            </div>
+            <nav id="gnb">
+                <ul>
+                    <li>
+                        <a href="../patchnote/patchnote.html">패치노트
+                            <div class="depth1_hover"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../league/league.html">리그
+                            <div class="depth1_hover"></div>
+                       </a>
+                    </li>
+                    <li>
+                        <a href="../rank/rank.html">경쟁전
+                            <div class="depth1_hover"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../shop/storeAll.html">STORE
+                            <div class="depth1_hover"></div>
+                        </a>
+                        <ul>
+                            <li><a href="../shop/shopAll">ALL</a></li>
+                            <li><a href="storeNew.html">NEW</a></li>
+                            <li><a href="equipment.html">장비</a></li>
+                            <li><a href="clothes.html">옷</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../freeboard.html">커뮤니티
+                            <div class="depth1_hover"></div>
+                        </a>
+                        <ul>
+                            <li><a href="freeboard.html">자유게시판</a></li>
+                            <li><a href="strategy.html">공략게시판</a></li>
+                            <li><a href="bug.html">버그/핵 신고</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../introduce/company.html">소개
+                            <div class="depth1_hover"></div>
+                        </a>
+                        <ul>
+                            <li><a href="../introduce/company.html">회사소개</a></li>
+                            <li><a href="../introduce/gameIntro.html">게임소개</a></li>
+                            <li><a href="../introduce/recruit.html">채용</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="h2_area league_h2">
+        <h2>LEAGUE</h2>
+    </div>
+    <div id="container" class="league_cnt">
+        <div class="league_indi font2" role="navigation">
+            <ul>
+                <li><a href="#leagueIntr" role="button"><span>대회소개</span></a></li>
+                <li><a href="#leagueSche" role="button"><span>대회일정</span></a></li>
+                <li><a href="#leagueTeam" role="button"><span>대회지역</span></a></li>
+                <li><a href="#leagueRepl" role="button"><span>다시보기</span></a></li>
+            </ul> 
+            <a href="#" role="button"><span>TOP</span></a>
+         </div>
+        <div class="cnt12_bg">
+            <!-- 대회소개 -->
+            <section class="cnt1" id="leagueIntr">
+                <div class="area p_r">
+                    <div class="intro_txt p_a">
+                         <h3 class="font2">PUBG CONTINENTAL SERIES2</h3>
+                         <p>각 권역별 최고의 배틀그라운드 팀이 모이는 <br>
+                            글로벌 배틀그라운드 이스포츠 대회</p>
+                        <ul>
+                            <li>
+                                <strong>4개의 권역</strong>
+                                <ul>
+                                    <li>-아시아 : 한국,중국,일본,차이니즈 타이페이</li>
+                                    <li>-아시아 퍼시픽 : 태국,베트남,인도네시아,필리핀,말레이시아,싱가폴</li>
+                                    <li>-유럽 : 프랑스,러시아,노르웨이,스웨덴,덴마크,터키,핀란드,우크라이나</li>
+                                    <li>-북미</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>일정</strong>
+                                <p>8월 27일 ~ 9월 13일</p>
+                            </li>
+                            <li>
+                                <strong>총합 상금</strong>
+                                <p>80만 달러 (각 권역 당 20만 달러) + PCS2 스킨 판매 수익의 25%</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pcs1_img p_a">
+                        <img src="../images/league/leagueIntr/genG.jpg" alt="pcs1리그 우승팀 젠지">
+                    </div>
+                    <div class="img_bg"></div>
+                </div>
+            </section>
+            <!-- 대회일정 -->
+            <section class="cnt2" id="leagueSche">
+                <div class="area">
+                     <h3 class="p_r">PCS2 SCHEDULES</h3>
+                     <div id="calendar" class="p_r">
+                        <table role="grid" aria-labelledby="pcs2Schedule">
+                            <caption id="pcs2Schedule">PCS2 리그 일정표</caption>
+                            <colgroup>
+                                <col class="w130" span="7">
+                            </colgroup>
+                            <thead class="font2">
+                                <tr role="row">
+                                    <th class="week" scope="col" aria-label="Monday">MON</th>
+                                    <th class="week" scope="col" aria-label="Tuesday">TUE</th>
+                                    <th class="week" scope="col" aria-label="Wednesday">WED</th>
+                                    <th class="week" scope="col" aria-label="Thursday">THU</th>
+                                    <th class="week" scope="col" aria-label="Friday">FRI</th>
+                                    <th class="week" scope="col" aria-label="Saturday">SAT</th>
+                                    <th class="week" scope="col" aria-label="Sunday">SUN</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr role="row">
+                                    <td role="gridcell" tabindex="0">
+                                        <span class="month_math">8</span>
+                                        <span class="month_eng">AUG</span>
+                                        <span class="day">24</span>
+                                    </td>
+                                    <td role="gridcell" tabindex="0"><span class="day">25</span></td>
+                                    <td role="gridcell" tabindex="0"><span class="day">26</span></td>
+                                    <td role="gridcell" tabindex="0">
+                                        <span class="day">27</span>
+                                        <a href="#" class="cal_asia" role="button" data-region="asia_btn">ASIA</a>
+                                        <a href="#" class="cal_usa" role="button" data-region="usa_btn">NORTH AMERICA</a>
+                                    </td>
+                                    <td role="gridcell"><span class="day">28</span></td>
+                                    <td role="gridcell" tabindex="0">
+                                        <span class="day">29</span>
+                                        <a href="#" class="cal_apac" role="button" data-region="apac_btn">APAC</a>
+                                        <a href="#" class="cal_eu" role="button" data-region="eu_btn">EUROPE</a>
+                                    </td>
+                                    <td role="gridcell"><span class="day">30</span></td>
+                                </tr>
+                                <tr role="row">
+                                    <td role="gridcell" tabindex="0"><span class="day">31</span></td>
+                                    <td role="gridcell" tabindex="0">
+                                        <span class="month_math">9</span>
+                                        <span class="month_eng">SEP</span>
+                                        <span class="day">1</span>
+                                    </td>
+                                    <td role="gridcell" tabindex="0"><span class="day">2</span></td>
+                                    <td role="gridcell" tabindex="0">
+                                        <span class="day">3</span>
+                                        <a href="#" class="cal_asia" role="button" data-region="asia_btn">ASIA</a>
+                                        <a href="#" class="cal_usa" role="button" data-region="usa_btn">NORTH AMERICA</a>
+                                    </td>
+                                    <td role="gridcell"><span class="day">4</span></td>
+                                    <td role="gridcell" tabindex="0">
+                                        <span class="day">5</span>
+                                        <a href="#" class="cal_apac" role="button" data-region="apac_btn">APAC</a>
+                                        <a href="#" class="cal_eu" role="button" data-region="eu_btn">EUROPE</a>   
+                                    </td>
+                                    <td role="gridcell"><span class="day">6</span></td>
+                                </tr>
+                                <tr role="row">
+                                    <td role="gridcell" tabindex="0"><span class="day">7</span></td>
+                                    <td role="gridcell" tabindex="0">
+                                        <span class="day">8</span>
+                                        <a href="#" class="cal_asia" role="button" data-region="asia_btn">ASIA</a>
+                                    </td>
+                                    <td role="gridcell"><span class="day">9</span></td>
+                                    <td role="gridcell" tabindex="0">
+                                        <span class="day">10</span>
+                                        <a href="#" class="cal_usa" role="button" data-region="usa_btn">NORTH AMERICA</a>
+                                    </td>
+                                    <td role="gridcell"><span class="day">11</span></td>
+                                    <td role="gridcell" tabindex="0">
+                                        <span class="day">12</span>
+                                        <a href="#" class="cal_apac" role="button" data-region="apac_btn">APAC</a>
+                                        <a href="#" class="cal_eu" role="button" data-region="eu_btn">EUROPE</a>
+                                    </td>
+                                    <td role="gridcell"><span class="day">13</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                     </div>
+                </div>  
+            </section>
+        </div>
+    <!-- 리그지역 -->
+        <section class="cnt3 p_r" id="leagueTeam">
+            <div class="area p_r">
+                <h3 class="blind_b">대회참여팀</h3>
+                <div class="team_slider" aria-label="각 대륙별 참여팀 슬라이드">
+                    <div class="slide1 team_slide">
+                        <h4 id="slide1_tit">ASIA</h4>
+                        <img src="../images/league/leagueTeam/league-asia-map.png" alt="아시아참여팀 지도">
+                        <div class="teamlist">
+                            <ul>
+                                <li>
+                                    <div class="nation"><img src="../images/league/leagueTeam/ASIA/nation/korea.png" alt="한국"></div>
+                                    <ul class="team">
+                                        <li><img src="../images/league/leagueTeam/ASIA/Korea/t1.PNG" alt=""><span>t1</span></li>
+                                        <li><img src="../images/league/leagueTeam/ASIA/Korea/VRLU_GHIBLI.png" alt=""><span>VRLU GHIBLI</span></li>
+                                        <li><img src="../images/league/leagueTeam/ASIA/Korea/AFREECA_FREECS.png" alt=""><span>AFREECA FREECS</span></li>
+                                        <li><img src="../images/league/leagueTeam/ASIA/Korea/OGN_ENTUS.png" alt=""><span>OGN ENTUS</span></li>
+                                        <li><img src="../images/league/leagueTeam/ASIA/Korea/SEOLHAEONE_PRINCE.png" alt=""><span>SEOLHAEONE PRINCE</span></li>
+                                        <li><img src="../images/league/leagueTeam/ASIA/Korea/LAVEGA_ESPORTS.png" alt=""><span>LAVEGA ESPORTS</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="nation"><img src="../images/league/leagueTeam/ASIA/nation/china.PNG" alt="중국"></div>
+                                    <ul class="team">
+                                        <li><img src="../images/league/leagueTeam/ASIA/China/CHAMPION_OF_COMPETITION.png" alt=""><span>COC</span></li>
+                                        <li><img src="../images/league/leagueTeam/ASIA/China/FourAngryMan.png" alt=""><span>4AM</span></li>
+                                        <li><img src="../images/league/leagueTeam/ASIA/China/infantry.PNG" alt=""><span>infantry</span></li>
+                                        <li><img src="../images/league/leagueTeam/ASIA/China/STILL_MOVING_UNDER_GUNFIRE.png" alt=""><span>SMG</span></li>
+                                        <li><img src="../images/league/leagueTeam/ASIA/China/TIANBA.png" alt=""><span>TIANBA</span></li>
+                                        <li><img src="../images/league/leagueTeam/ASIA/China/TRIUMPHANT_SONG_GAMING.png" alt=""><span>TSG</span></li>
+                                    </ul>
+                                </li>
+                                <li class="t2">
+                                    <div class="nation"><img src="../images/league/leagueTeam/ASIA/nation/taiwan.PNG" alt="대만"></div>
+                                    <ul class="team">
+                                        <li><img src="../images/league/leagueTeam/ASIA/Taiwan/GLOBAL_ESPORTS_XSSET_ACE.png" alt=""><span>GEXA</span></li>
+                                        <li><img src="../images/league/leagueTeam/ASIA/Taiwan/TEAM_SADES.png" alt=""><span>TEAM SADES</span></li>
+                                    </ul>
+                                </li>
+                                <li class="t2">
+                                    <div class="nation"><img src="../images/league/leagueTeam/ASIA/nation/Japan.PNG" alt="일본"></div>
+                                    <ul class="team">
+                                        <li><img src="../images/league/leagueTeam/ASIA/Japan/ELEMENT36.png" alt=""><span>ELEMENT36</span></li>
+                                        <li><img src="../images/league/leagueTeam/ASIA/Japan/SUNSISTER.png" alt=""><span>SUNSISTER</span></li>      
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slide2 team_slide">
+                        <h4 id="slide2_tit">APAC</h4>
+                        <img src="../images/league/leagueTeam/league-apac-map.png" alt="apac참여팀 지도">
+                        <div class="teamlist">
+                            <ul>
+                                <li>
+                                    <div class="nation"><img src="../images/league/leagueTeam/APAC/nation/Thailand.PNG" alt="태국"></div>
+                                    <ul class="team">
+                                        <li><img src="../images/league/leagueTeam/APAC/Thailand/Buriram_United_Esports.png" alt=""><span>BUE</span></li>
+                                        <li><img src="../images/league/leagueTeam/APAC/Thailand/Daytrade_Gaming.png" alt=""><span>DG</span></li>
+                                        <li><img src="../images/league/leagueTeam/APAC/Thailand/Kaiser_Tuna.png" alt=""><span>KAISER TUNA</span></li>
+                                        <li><img src="../images/league/leagueTeam/APAC/Thailand/Magic_Esports.png" alt=""><span>Magic Esports</span></li>
+                                        <li><img src="../images/league/leagueTeam/APAC/Thailand/MSC_Theerathon.png" alt=""><span>MSC Theerathon</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="nation"><img src="../images/league/leagueTeam/APAC/nation/Vietnam.png" alt="베트남"></div>
+                                    <ul class="team">
+                                        <li><img src="../images/league/leagueTeam/APAC/Vietnam/Cerberus_Esports.png" alt=""><span>Cerberus Esports</span></li>
+                                        <li><img src="../images/league/leagueTeam/APAC/Vietnam/Divine_Esports.png" alt=""><span>Divine Esports</span></li>
+                                        <li><img src="../images/league/leagueTeam/APAC/Vietnam/DivisionX_Gaming.png" alt=""><span>DivisionX Gaming</span></li>
+                                        <li><img src="../images/league/leagueTeam/APAC/Vietnam/GameHome_Esports.png" alt=""><span>GameHome Esports</span></li>
+                                        <li><img src="../images/league/leagueTeam/APAC/Vietnam/X-Stadium_Thu_Duc.png" alt=""><span>X-Stadium Thu Duc</span></li>
+                                    </ul>
+                                </li>
+                                <li class="t2">
+                                    <div class="nation"><img src="../images/league/leagueTeam/APAC/nation/Australia.png" alt="오스트레일리아"></div>
+                                    <ul class="team">
+                                        <li><img src="../images/league/leagueTeam/APAC/Australia/ASTRA.png" alt=""><span>ASTRA</span></li>
+                                        <li><img src="../images/league/leagueTeam/APAC/Australia/FURY_AUSTRALIA.png" alt=""><span>FURY</span></li>
+                                    </ul>
+                                </li>
+                                <li class="t2">
+                                    <div class="nation"><img src="../images/league/leagueTeam/APAC/nation/Indonesia.PNG" alt="인도네시아"></div>
+                                    <ul class="team">
+                                        <li><img src="../images/league/leagueTeam/APAC/Indonesia/FROM_THE_FUTURE.png" alt=""><span>FROM THE FUTURE</span></li>
+                                        <li><img src="../images/league/leagueTeam/APAC/Indonesia/VICTIM_RISE.png" alt=""><span>VICTIM RISE</span></li>      
+                                    </ul>
+                                </li>
+                                <li class="t2">
+                                    <div class="nation"><img src="../images/league/leagueTeam/APAC/nation/Malaysia.png" alt="말레이시아"></div>
+                                    <ul class="team">
+                                        <li><img src="../images/league/leagueTeam/APAC/Malaysia/BATTLE_ARENA_ELITES.png" alt=""><span>BATTLE ARENA ELITES</span></li>   
+                                    </ul>
+                                </li>
+                                <li class="t2">
+                                    <div class="nation"><img src="../images/league/leagueTeam/APAC/nation/Philippines.png" alt="필리핀"></div>
+                                    <ul class="team">
+                                        <li><img src="../images/league/leagueTeam/APAC/Philippines/ARKANGEL_PREDATOR.png" alt=""><span>ARKANGEL PREDATOR</span></li>    
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slide3 team_slide">
+                        <h4 id="slide3_tit">EUROPE</h4>
+                        <img src="../images/league/leagueTeam/league-eu-map.png" alt="유럽 참여팀 지도">
+                        <div class="teamlist">
+                            <ul>
+                                <li>
+                                    <div class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Turkey.PNG" alt="터키"></div>
+                                    <ul class="team">
+                                        <li><img src="../images/league/leagueTeam/EUROPE/Turkey/BLAZE_ESPORTS.png" alt=""><span>BLAZE ESPORTS</span></li>
+                                        <li><img src="../images/league/leagueTeam/EUROPE/Turkey/Etiget_Esports.png" alt=""><span>Etiget Esports</span></li>
+                                        <li><img src="../images/league/leagueTeam/EUROPE/Turkey/Istanbul_Wild_Cats.png" alt=""><span>Istanbul Wild Cats</span></li>
+                                        <li><img src="../images/league/leagueTeam/EUROPE/Turkey/TSM.png" alt=""><span>TSM</span></li>
+                                    </ul>
+                                </li>
+                                <li class="t2">
+                                    <div class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Russia.PNG" alt="러시아"></div>
+                                    <ul class="team">
+                                        <li><img src="../images/league/leagueTeam/EUROPE/Russia/Northern_Lights.png" alt=""><span>Northern Lights</span></li>
+                                        <li><img src="../images/league/leagueTeam/EUROPE/Russia/ShiftW.png" alt=""><span>ShiftW</span></li>
+                                        <li><img src="../images/league/leagueTeam/EUROPE/Russia/Tornado_Energy.png" alt=""><span>Tornado Energy</span></li>
+                                    </ul>
+                                </li>
+                                <li class="t2">
+                                    <div class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Ukraine.PNG" alt="우크라이나"></div>
+                                    <ul class="team">
+                                        <li><img src="../images/league/leagueTeam/EUROPE/Ukraine/Natus_Vincere.png" alt=""><span>Natus Vincere</span></li>
+                                        <li><img src="../images/league/leagueTeam/EUROPE/Ukraine/Winstreak.png" alt=""><span>Winstreak</span></li>
+                                    </ul>
+                                </li>
+                                <li class="t2">
+                                    <div class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/France.PNG" alt="프랑스"></div>
+                                    <ul class="team">
+                                        <li><img src="../images/league/leagueTeam/EUROPE/France/Adepts.png" alt=""><span>Adepts</span></li>
+                                        <li><img src="../images/league/leagueTeam/EUROPE/France/Raise_Your_Edge.png" alt=""><span>Raise Your Edge</span></li>      
+                                    </ul>
+                                </li>
+                                <li class="t2">
+                                    <div class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Finland.PNG" alt="핀란드"></div>
+                                    <ul class="team">
+                                        <li><img src="../images/league/leagueTeam/EUROPE/Finland/ENCE.png" alt=""><span>ENCE</span></li>   
+                                        <li><img src="../images/league/leagueTeam/EUROPE/Finland/Team_Liquid.png" alt=""><span>Team Liquid</span></li>   
+                                    </ul>
+                                </li>
+                                <li class="t1">
+                                    <div class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Norway.PNG" alt="노르웨이"></div>
+                                    <ul class="team">
+                                        <li><img src="../images/league/leagueTeam/EUROPE/Norway/Omaken_Sports.png" alt=""><span>Omaken Sports</span></li>    
+                                    </ul>
+                                </li>
+                                <li class="t1">
+                                    <div class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Denmark.PNG" alt="덴마크"></div>
+                                    <ul class="team">
+                                        <li><img src="../images/league/leagueTeam/EUROPE/Denmark/Bystanders.png" alt=""><span>Bystanders</span></li>    
+                                    </ul>
+                                </li>
+                                <li class="t1">
+                                    <div class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Sweden.PNG" alt="스웨덴"></div>
+                                    <ul class="team">
+                                        <li><img src="../images/league/leagueTeam/EUROPE/Sweden/FaZe_Clan.png" alt=""><span>FaZe Clan</span></li>    
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="slide4 team_slide">
+                        <h4 id="slide4_tit">NORTH AMERICA</h4>
+                        <img src="../images/league/leagueTeam/league-usa-map.png" alt="북미 참여팀 지도">
+                        <div class="teamlist">
+                            <ul>
+                                <li>
+                                    <div class="nation"><img src="../images/league/leagueTeam/USA/usa.PNG" alt="미국"></div>
+                                    <ul class="team">
+                                        <li><img src="../images/league/leagueTeam/USA/303_Esports.png" alt=""><span>303 Esports</span></li>
+                                        <li><img src="../images/league/leagueTeam/USA/Any_Trolls_in_Chat.png" alt=""><span>Any Trolls in Chat</span></li>
+                                        <li><img src="../images/league/leagueTeam/USA/Carnage_Gaming.png" alt=""><span>Carnage Gaming.png</span></li>
+                                        <li><img src="../images/league/leagueTeam/USA/Comets.png" alt=""><span>Comets</span></li>
+                                        <li><img src="../images/league/leagueTeam/USA/Dodge.png" alt=""><span>Dodge</span></li>
+                                        <li><img src="../images/league/leagueTeam/USA/Duel.png" alt=""><span>Duel</span></li>
+                                        <li><img src="../images/league/leagueTeam/USA/Fabled.png" alt=""><span>Fabled</span></li>
+                                        <li><img src="../images/league/leagueTeam/USA/Houston_Hardshifts.png" alt=""><span>Houston Hardshifts</span></li>
+                                        <li><img src="../images/league/leagueTeam/USA/Illusion.png" alt=""><span>Illusion</span></li>
+                                        <li><img src="../images/league/leagueTeam/USA/Liberate.png" alt=""><span>Liberate</span></li>
+                                        <li><img src="../images/league/leagueTeam/USA/Oath.png" alt=""><span>Oath</span></li>
+                                        <li><img src="../images/league/leagueTeam/USA/Radiance.png" alt=""><span>Radiance</span></li>
+                                        <li><img src="../images/league/leagueTeam/USA/Shoot_To_Kill.png" alt=""><span>Shoot To Kill</span></li>
+                                        <li><img src="../images/league/leagueTeam/USA/Soniqs.png" alt=""><span>Soniqs</span></li>
+                                        <li><img src="../images/league/leagueTeam/USA/Team-Veritas.png" alt=""><span>Team-Veritas</span></li>
+                                        <li><img src="../images/league/leagueTeam/USA/Zenith_Esports.png" alt=""><span>Zenith Esports</span></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="teamslider_pager">
+                    <a id="asia_btn" data-slide-index="0" href="#" role="button"><span class="blind_b">ASIA</span></a>
+                    <a id="apac_btn" data-slide-index="1" href="#" role="button"><span class="blind_b">APAC</span></a>
+                    <a id="eu_btn" data-slide-index="2" href="#" role="button"><span class="blind_b">EUROPE</span></a>
+                    <a id="usa_btn" data-slide-index="3" href="#" role="button"><span class="blind_b">NORTH AMERICA</span></a>
+                </div>
+            </div>                     
+        </section>
+    <!-- 다시보기 -->
+        <section class="cnt4" id="leagueRepl">
+            <div class="area p_r">
+                <h3>다시보기</h3>
+                <ul class="clearfix">
+                    <li>
+                        <div aria-hidden="true">
+                            <img src="../images/league/leagueRepl/replay-img1.PNG" alt="">
+                            <p>이이제이는 이렇게 | <span>DAY4 <br> MATCH4 H/L / PCS2 ASIA</span></p>
+                        </div>
+                        <a href="#" class="over">
+                            이이제이는 이렇게 <br> <span> DAY4  MATCH4 H/L <br> PCS2 ASIA</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div aria-hidden="true">
+                            <img src="../images/league/leagueRepl/replay-img2.PNG" alt="">
+                            <p>전체 판도를 바꿔버린 언더의 수류탄! <br><span>DAY4  MATCH3 H/L / PCS2 ASIA</span></p>
+                        </div>
+                        <a href="#"  class="over">
+                            전체 판도를 바꿔버린 언더의 수류탄! <br><span>DAY4  MATCH3 H/L <br> PCS2 ASIA</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div aria-hidden="true">
+                            <img src="../images/league/leagueRepl/replay-img3.PNG" alt="">
+                            <p> 갑자기 분위기 폐차장 | <span>DAY4 <br> MATCH2 H/L / PCS2 ASIA</span></p>
+                        </div>
+                        <a href="#" class="over">
+                            갑자기 분위기 폐차장 <br>  <span>DAY4 MATCH2 H/L <br>  PCS2 ASIA</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="read_more"><span class="blind_b">리그경기 다시보기</span>Read More</a>
+            </div>
+        </section>
+    </div>
+    
+    <footer id="footer">
+        <div class="footer_top">
+            <div class="area">
+                <ul class="sns_list clearfix">
+                    <li><a href="#" target="_blank"><span class="blind_b">youtube</span></a></li>
+                    <li><a href="#" target="_blank"><span class="blind_b">afreeca</span></a></li>
+                    <li><a href="#" target="_blank"><span class="blind_b">twitch</span></a></li>
+                    <li><a href="#" target="_blank"><span class="blind_b">instagram</span></a></li>
+                    <li><a href="#" target="_blank"><span class="blind_b">facebook</span></a></li>
+                    <li><a href="#" target="_blank"><span class="blind_b">twitter</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_btm">
+            <div class="area">
+                    <img src="../images/common/btm_logo.png" alt="pubg">
+                    <div class="footer_txt">
+                            <p>COPYRIGHT ©2020 PUBG CORPORATION. ALL RIGHTS RESERVED. <br>
+                                PLAYERUNKNOWN’S BATTLEGROUNDS 및 PUBG는 PUBG CORPORATION의 등록된 상표입니다</p>
+                            <address>사업제휴문의: PUBG_inquiry@pubg.com</address>
+                            <ul class="footer_nav">
+                                <li><a href="#">개인정보 처리방침</a></li>
+                                <li><a href="#">이용자 제작 콘텐츠 규칙</a></li>
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#">운영정책</a></li>
+                                <li><a href="#">최종 사용자 라이선스 계약</a></li>
+                                <li><a href="#">청약철회 규정</a></li>
+                            </ul>
+                    </div>
+            </div>
+        </div>
+</footer>
+<div id="login_box">
+    <strong>Sign In</strong>
+    <form action="" method="post">
+        <div>
+            <label for="uid"><img src="../images/common/user.png" alt="아이디"  ></label>
+            <input type="text" id="uid" name="uid" data-link="first"> 
+        </div>
+        <div>
+            <label for="upw"><img src="../images/common/lock.png" alt="비밀번호"></label>
+            <input type="password" id="upw" name="uid"> 
+        </div>
+        <button type="submit">Sign In</button>
+    </form>
+    <div class="find_join">
+        <a href="#">아이디 찾기</a>
+        <a href="#">비밀번호 찾기</a>
+        <a href="#">회원가입</a>
+    </div>
+    <button class="close_btn" type="button" data-link="last">
+        <span class="blind_b">로그인 팝업창 닫기</span>
+    </button>
+</div>
+</body>
+</html>

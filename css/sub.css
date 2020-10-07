@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* 서브페이지 공통스타일 */
+.h2_area{position: relative;z-index: 1;height: 630px;padding-top: 345px;font-family: jersey;font-size: 70px;text-align: center;text-shadow:3px 3px 2px rgba(0,0,0,.8);letter-spacing: 5px;z-index: 1;background: #000;box-sizing:border-box;}
+.h2_area::after{content:"";position: absolute;z-index: -1;top: 0;left: 0;width: 100%;height: 100%;opacity:.7;}
+.league_h2::after{background: url("../images/league/league_background3.jpg") -600px -50px;}
+.company_h2::after{background: url("../images/introduce/company-h2-bg.jpg");}
+.patchnote_h2::after{background: url("../images/patchnote/patch-h2-bg.jpg") no-repeat center / cover;}
+#container > section{width: 100%;height: calc(100vh - 60px);}
+#container section h3{font-family: koverwatch, "맑은 고딕", "Malgun Gothic", sans-serif;font-size: 50px;letter-spacing: 1px;}
+
+.read_more {position: relative;display: inline-block;transition: all 0.3s ease;text-align: center;font-weight: 600;color: #000;padding: 10px 25px;border-radius: 5px;width: 130px;height: 40px;line-height: 42px;padding: 0;border: none;background: #fff;margin-top: 60px;}
+.read_more:hover,.read_more:focus {color: #fff;background: transparent;}
+.read_more:before,.read_more:after{content:'';position:absolute;top:0;right:0;height:2px;width:0;background: #fff;transition:.2s ease all;}
+.read_more::after{right:inherit;top:38px;left:0;bottom:0;}
+.read_more:hover::before,.read_more:hover::after,.read_more:focus::before,.read_more:focus::after{width:100%;transition:.3s ease all;}
+
+/* league */
+/* league indicator */
+.league_indi{position: fixed;top: 50%;right: 3%;transform:translateY(-50%);z-index: 10;text-align: center;color:rgba(0,0,0,.8);font-weight: 400;}
+.league_indi ul li+li{margin-top: 2px;}
+.league_indi ul li a{display: block;width: 130px;height: 110px;line-height: 110px;background: #968719;transform:skewY(-15deg);position: relative;z-index: 2;}
+.league_indi ul li a:hover,.league_indi ul li a:focus{background: #fde533;color:rgba(0,0,0,1);font-weight: 600;}
+.league_indi ul li a span{display: inline-block;transform:skewY(15deg);font-size: 22px;}
+.league_indi>a{display: block;width: 80px;height: 50px;line-height: 50px;background: #38330b;transform:skewY(35deg);color: rgba(255, 255, 255,.5);position: relative;top: -5px;}
+.league_indi>a:hover,.league_indi>a:focus{background: #2f2c13;color:#fff;font-weight: 600;}
+.league_indi>a>span{display: inline-block;transform:skewY(-35deg);padding: 10px 0 0 20px;}
+
+.cnt12_bg{
+    background: #5d5a50; /* Old browsers */
+    background: -moz-linear-gradient(bottom,  #5d5a50 0%, #514e45 7%, #161616 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(bottom,  #5d5a50 0%,#514e45 7%,#161616 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to top,  #5d5a50 0%,#514e45 7%,#161616 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#161616', endColorstr='#5d5a50',GradientType=0 ); /* IE6-9 */
+    }
+    /* #leagueIntr */
+#leagueIntr{padding-top: 150px;height: calc(100vh - 60px);box-sizing: border-box;}
+#leagueIntr .area::after{position: absolute;top: 50px;left: 20px;z-index:2;content:"";display: block;width: 445px;height: 369px;background: url("../images/league/leagueIntr/league_logo.PNG") no-repeat center / cover;opacity: 0.2;}
+#leagueIntr .intro_txt{top:0;left:-200px;width: 590px;height: 470px;padding-left: 40px;box-sizing:border-box;border-left: 2px solid #fde533;opacity: 0;}
+#leagueIntr h3 + p{margin: 20px 0 30px 0;font-size: 18px;}
+#leagueIntr strong{font-size: 24px;}
+#leagueIntr .intro_txt>ul>li{margin-bottom: 30px;}
+#leagueIntr .intro_txt p,#leagueIntr .intro_txt li ul li{font-size: 16px;}
+#leagueIntr .pcs1_img::before,#leagueIntr .pcs1_img::after{content:"";position: absolute;top: 0;left: 0;width: 615px;height: 400px;}
+
+#leagueIntr .pcs1_img::before{background: #ccc;z-index: 10;}
+#leagueIntr .pcs1_img{right: 30px;bottom: 100px;width: 615px;height: 400px;}
+#leagueIntr .pcs1_img::after{background: #333333;-webkit-animation:imgbg-ani 2s forwards;-o-animation:imgbg-ani 2s forwards;animation:imgbg-ani 2s forwards;z-index: 12;}
+#leagueIntr .pcs1_img img{width: 615px;height: 400px;position: relative;z-index: 11;opacity: 0;}
+
+#leagueIntr .pcs1_img.img_slide::after{background: #333333;-webkit-animation:imgbg-ani 3s forwards;-o-animation:imgbg-ani 3s forwards;animation:imgbg-ani 3s forwards;z-index: 12;}
+#leagueIntr .pcs1_img.img_slide img{-webkit-animation: img-ani 3s forwards;-o-animation: img-ani 3s forwards;animation: img-ani 3s forwards;}
+
+@-webkit-keyframes imgbg-ani{
+    0%{transform-origin:left center;transform:scaleX(0);}
+    15%{transform-origin:left center;transform:scaleX(0);}
+    50%{transform-origin:left center;transform:scaleX(1);}
+    55%{transform-origin:right center;transform:scaleX(1);}
+    100%{transform-origin:right center;transform:scaleX(0);}
+}
+@-o-keyframes imgbg-ani{
+    0%{transform-origin:left center;transform:scaleX(0);}
+    15%{transform-origin:left center;transform:scaleX(0);}
+    50%{transform-origin:left center;transform:scaleX(1);}
+    55%{transform-origin:right center;transform:scaleX(1);}
+    100%{transform-origin:right center;transform:scaleX(0);}
+}
+@keyframes imgbg-ani{
+    0%{transform-origin:left center;transform:scaleX(0);}
+    15%{transform-origin:left center;transform:scaleX(0);}
+    50%{transform-origin:left center;transform:scaleX(1);}
+    55%{transform-origin:right center;transform:scaleX(1);}
+    100%{transform-origin:right center;transform:scaleX(0);}
+}
+
+@-webkit-keyframes img-ani{
+    0%{opacity: 0;}
+    49%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 1;}
+}
+@-o-keyframes img-ani{
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 1;}
+}
+@keyframes img-ani{
+    0%{opacity: 0;}
+    47%{opacity: 0;}
+    48%{opacity: 1;}
+    100%{opacity: 1;}
+}
+
+#leagueIntr .img_bg{position: absolute;bottom: 70px;right: 0;width: 615px;height: 400px;background: #fff;z-index: 2;}
+
+    /* #leagueSche */
+#leagueSche{padding-top: 100px;height: calc(100vh - 60px);box-sizing: border-box;}
+#leagueSche h3{margin-bottom: 100px;}
+#leagueSche h3::after{content:"";position: absolute;bottom:-50px;left: 0;width: 160px;height: 2px;background: #fde533;}
+#leagueSche #calendar{width: 1000px;height: 580px;z-index: 2;background: url("../images/league/leagueSche/leagueSche-bg.jpg") no-repeat center / cover;padding-top: 50px;box-sizing: border-box;}
+#leagueSche #calendar::before{content:"";position:absolute;z-index: 1;top: 0;left: 0;width: 100%;height: 100%;}
+#leagueSche #calendar table{width: 915px;height: 480px;border-top:2px solid rgba(255,255,255,.7);border-bottom:2px solid rgba(255,255,255,.7);margin: 0 auto;color: rgba(255, 255, 255,.8);}
+.w130{width: 130px;}
+#leagueSche #calendar th{font-size: 26px;}
+#leagueSche #calendar thead tr{height: 66px;border-bottom:2px solid rgba(255,255,255,.7);}
+#leagueSche #calendar tbody tr{height: 138px;}
+#leagueSche #calendar tr:nth-of-type(n+2){border-top:1px solid rgba(255,255,255,.7);}
+#leagueSche #calendar td{position: relative;height: 106px;}
+#leagueSche #calendar td:focus{outline:2px solid #fff;}
+#leagueSche #calendar td+td,#leagueSche #calendar th+th{border-left: 1px solid rgba(255,255,255,.7);}
+#leagueSche #calendar tbody{font-weight: 600;}
+#leagueSche #calendar td .day{position: absolute;top: 13px;right: 13px;}
+#leagueSche #calendar td .month_math{position: absolute;top: 10px;left: 13px;font-size: 26px;}
+#leagueSche #calendar td .month_eng{position: absolute;top: 17px;left: 34px;font-size: 14px;}
+#leagueSche #calendar td a{position: absolute;left: 15px;z-index: 5;width: 237px;height: 30px;line-height: 30px;font-size: 14px;font-weight: 600;color: #000;text-align: center;}
+#leagueSche #calendar td a:first-of-type{top: 48px;}
+#leagueSche #calendar td a:last-of-type{top: 85px;}
+#leagueSche #calendar td a.cal_asia{background: #c3a214;}
+#leagueSche #calendar td a.cal_usa{background: #cb2426;}
+#leagueSche #calendar td a.cal_apac{background: #078d3b;}
+#leagueSche #calendar td a.cal_eu{background: #1e78b2;}
+
+    /* #leagueTeam */
+#leagueTeam{background: url("../images/league/leagueTeam/leagueTeam_bg.jpg") no-repeat center / cover;}
+#leagueTeam .bx-wrapper{width: 1300px;height: 100%;padding: 40px 200px 0 200px;-moz-box-sizing: border-box;box-sizing: border-box;}
+#leagueTeam .team_slide{position: relative;width: 900px;height: 670px;font-family: koverwatch, "맑은 고딕", "Malgun Gothic", sans-serif;}
+#leagueTeam .team_slide h4{font-size: 50px;padding-top: 50px;}
+#leagueTeam .team_slide>img{position: absolute;top: 0;right: 0px;width: 372px;height: 200px;}
+#leagueTeam .team_slide .teamlist{position: absolute;top: 210px;left: 0;width: 100%;}
+
+#leagueTeam .team_slide .teamlist>ul>li{position: relative;border:2px solid #fff;height: 90px;box-sizing: border-box;}
+#leagueTeam .team_slide .teamlist>ul>li+li{margin-top: 30px;}
+#leagueTeam .team_slide .teamlist .nation>img{position: absolute;top: -20px;left: 20px;width: 80px;height: 60px;}
+#leagueTeam .team_slide .team::after{content:"";display: block;clear: both;}
+#leagueTeam .team_slide .team li{float: left;padding-top: 5px;-moz-box-sizing: border-box;box-sizing: border-box;}
+#leagueTeam .team_slide .team li:first-of-type{margin-left: 130px;}
+#leagueTeam .team_slide.team li+li{margin-left: 15px;}
+#leagueTeam .team_slide .team li{width: 95px;height: 55px;text-align: center;}
+#leagueTeam .team_slide .team li img{width: 45px;height: 45px;}
+#leagueTeam .team_slide .team li span{display: block;margin-top: 5px;}
+#leagueTeam .team_slide .teamlist .t6{width: 100%;}
+#leagueTeam .team_slide .teamlist .t2{width: 435px;float: left;}
+#leagueTeam .team_slide .teamlist .t2:nth-of-type(odd){margin-right: 30px;}
+#leagueTeam .slide3 .teamlist .t2:nth-of-type(odd){margin-right: 0px;}
+#leagueTeam .slide3 .teamlist .t2:nth-of-type(even){margin-right: 30px;}
+#leagueTeam .team_slide .teamlist .t1{width: 274px;float: left;}
+#leagueTeam .team_slide .teamlist .t1 +.t1{margin-left: 39px;}
+#leagueTeam .slide4 .teamlist>ul>li{width: 900px;height: 350px;}
+#leagueTeam .slide4 .team li{margin-left: 20px;margin-top: 40px;}
+#leagueTeam .slide4 .teamlist .team li:nth-of-type(6n+1){margin-left: 150px;}
+
+  /* leagueTeam Slider제어버튼 */
+#leagueTeam .bx-controls-direction a,#leagueTeam .teamslider_pager{position: absolute;z-index: 100;}
+#leagueTeam .bx-controls-direction a{top:calc(50% - 28px);width: 64px;height: 56px;background: no-repeat center / cover;transition: all .2s;}
+#leagueTeam .bx-controls-direction .bx-prev{left: 88px;background-image: url("../images/league/leagueTeam/leagueTeam-arrowsLeft.png");}
+#leagueTeam .bx-controls-direction .bx-next{right: 88px;background-image: url("../images/league/leagueTeam/leagueTeam-arrowsRight.png");}#leagueTeam .bx-controls-direction .bx-prev:hover{background-image: url("../images/league/leagueTeam/leagueTeam-arrowsLeft-over.png");}
+#leagueTeam .bx-controls-direction .bx-next:hover{background-image: url("../images/league/leagueTeam/leagueTeam-arrowsRight-over.png");}
+#leagueTeam .teamslider_pager{bottom: 90px;left:calc(50% - 160px);width: 444px;height: 24px;}
+#leagueTeam .teamslider_pager a{position: relative;float: left;width: 20px;height: 20px;background: #fff;border-radius: 50%;margin-right: 80px;-moz-box-sizing: border-box;box-sizing: border-box;transition:all .3 s;font-size: 14px;text-align: center;font-weight: 600;}
+#leagueTeam .teamslider_pager a+a::before{content:"";position: absolute;left: -80px;top: 10px;width: 80px;height: 1px;background: #fff;}
+#leagueTeam .teamslider_pager a.active::before{top: 6px;left: -84px;}
+#leagueTeam .teamslider_pager a.active{background: none;border: 4px solid #fde533;position: relative;}
+#leagueTeam .teamslider_pager a.active::after{content:"";position: absolute;width: 90px;height: 25px;line-height: 25px;background:#fde533;left: -320%;top: -35px;color: #000;border-radius: 5px;font-size: 14px;text-align: center;font-weight: 600;}
+#leagueTeam .teamslider_pager a:nth-of-type(1).active::after{content:"ASIA";}
+#leagueTeam .teamslider_pager a:nth-of-type(2).active::after{content:"APAC";}
+#leagueTeam .teamslider_pager a:nth-of-type(3).active::after{content:"EUROPE";}
+#leagueTeam .teamslider_pager a:nth-of-type(4).active::after{content:"U.S.A";}
+
+
+    /* #leagueRepl */
+#leagueRepl.cnt4{background: url("../images/league/leagueRepl/leagueRepl-bg.jpg") no-repeat center / cover;height: calc(100vh - 320px);}
+#leagueRepl.cnt4 .area{padding-top:80px;}
+#leagueRepl h3{margin-bottom: 50px;}
+#leagueRepl ul li{position: relative;float: left;box-shadow: 5px 5px 2px rgba(0,0,0,.4);overflow: hidden;font-size: 20px;}
+#leagueRepl ul li+li{margin-left: 80px;}
+#leagueRepl ul li img{width: 380px;height: 250px;}
+#leagueRepl ul li p{width: 380px;height: 100px;background: #fff;color: #000;font-weight: 400; -moz-box-sizing: border-box;box-sizing: border-box;padding: 20px 0 20px 25px;}
+#leagueRepl ul li p span{font-weight: 600;}
+#leagueRepl ul li .over{position: absolute;top: 0;left: 0;width: 100%;height: 100%;-moz-box-sizing: border-box;box-sizing: border-box;padding: 200px 30px;z-index: 100;opacity: 0;transition-delay: .3s;transition:.5s ease;text-align: center;}
+#leagueRepl ul li .over::after{content:"";position: absolute;top: 80px;left: calc(50% - 32px);width: 64px;height: 64px;background: url("../images/league/leagueRepl/play.png") no-repeat center;}
+#leagueRepl ul li:hover .over,#leagueRepl ul li.on .over{opacity: 1;}
+#leagueRepl ul li::before,#leagueRepl ul li::after{content:"";position: absolute;transition:.5s ease-in-out;height: 200%;width: 200%;background: #000;}
+#leagueRepl ul li::before{right:0;bottom: 0;transform:skew(45deg) translateX(100%);background: rgba(123, 138, 139,.8);}
+#leagueRepl ul li::after{left:0;top: 0;transform:skew(-135deg) translateX(-100%);background: rgba(93, 90, 80,.8);}
+#leagueRepl ul li:hover::before,#leagueRepl ul li.on::before{transform:skew(45deg) translateX(0%);}
+#leagueRepl ul li:hover::after,#leagueRepl ul li.on::after{transform:skew(-135deg) translateX(0%);}
+#leagueRepl .read_more{color: #000;position: absolute;top: 25px;right:70px;}
+#leagueRepl .read_more:hover,#leagueRepl .read_more:focus {color: #fff;background: transparent;}
+
+/* company */
+    /* #companyIntr */
+.companyIntr_bg{top: 0;left: 0;width: 100%;height: 100%;} 
+.companyIntr_bg .left_bg{float: left;width: 50%;height: 100%;background: #000;} 
+.companyIntr_bg .right_bg{float: left;width: 50%;height: 100%;background: url("../images/introduce/company-repre-bg.jpg") no-repeat center / cover;}
+#companyIntr .area{z-index: 1;padding-top:60px;} 
+#companyIntr .area img{width: 360px;height: 360px;margin-left: 57px;margin-bottom: 50px;opacity: 0;}
+#companyIntr .area .companyIntr_txt{width: 600px;height: 370px;margin-left: -60px;opacity: 0;}
+#companyIntr .area .companyIntr_txt q{display: inline-block;font-size: 35px;margin-bottom: 30px;}
+#companyIntr .area .companyIntr_txt q+p{font-weight: 300;line-height: 28px;}
+#companyIntr .area .companyIntr_txt p:last-of-type{margin-top: 30px;}
+    /* #companyWort */
+#companyWort{background: url("../images/introduce/companyWort-bg.jpg") no-repeat center / cover;}
+#companyWort svg{width: 500px;height: 300px;position: absolute;top: calc(50% - 170px);left: calc(50% - 238px);z-index: 1;}
+#companyWort ul{height: 100%;}
+#companyWort ul li{float:left;width: 50%;height: 50%;position: relative;-moz-box-sizing: border-box;box-sizing: border-box;} 
+/* #companyWort ul li:nth-of-type(1),#companyWort ul li:nth-of-type(2){padding-top: 90px;}
+#companyWort ul li:nth-of-type(3),#companyWort ul li:nth-of-type(4){padding-top: 195px;} */
+#companyWort ul li .worth_txt{position: absolute;width: 530px;height: 200px;z-index: 1;-moz-box-sizing: border-box;box-sizing: border-box;opacity: 0;}
+#companyWort ul li:nth-of-type(-n+2) .worth_txt{top:100px;}
+#companyWort ul li:nth-of-type(n+3) .worth_txt{bottom:50px;}
+#companyWort ul li:nth-of-type(odd) .worth_txt{left:-300px;}
+#companyWort ul li:nth-of-type(even) .worth_txt{right:-300px;}
+#companyWort ul li .worth_txt strong{font-family: koverwatch, "맑은 고딕", "Malgun Gothic", sans-serif;font-size: 35px;font-weight: 400;}
+#companyWort ul li .worth_txt p{font-size: 18px;margin-top: 30px;}
+
+    /* #companyRout */
+#container #companyRout{height: calc(100vh - 316px);padding-top: 60px;-moz-box-sizing: border-box;box-sizing: border-box;color: #000;background: url("../images/introduce/companyRoute-bg.jpg") no-repeat center / cover;}
+#companyRout .area>*{float: left;}
+#companyRout .area iframe{border:none;position: relative;}
+/* #companyRout .area iframe:focus::after{content:"";position: absolute;top: 0;left: 0;z-index: 2;width:calc(100% + 1px);height: calc(100% + 1px);border: 1px solid #000;} */
+#companyRout .company_info{margin-left: 120px;width: 500px;height: 370px;padding-top: 70px;}
+#companyRout .company_info strong{position: relative;display: inline-block;font-family: koverwatch, "맑은 고딕", "Malgun Gothic", sans-serif;font-size: 24px;font-weight: 400;margin-bottom: 15px;padding-left: 40px;height: 30px;line-height: 30px;}
+#companyRout .company_info strong::before{position: absolute;top: 0;left: 0px;z-index: 1;content:"";display: block;width: 31px;height: 28px;background: no-repeat center;}
+#companyRout .company_info>li:nth-of-type(1) strong::before{background-image:url("../images/introduce/company_location.png");}
+#companyRout .company_info>li:nth-of-type(2) strong::before{background-image:url("../images/introduce/company_call.png");}
+#companyRout .company_info>li:nth-of-type(3) strong::before{background-image:url("../images/introduce/company_transpo.png");}
+#companyRout .company_info>li{margin-bottom: 55px;}
+#companyRout .company_info p,#companyRout .company_info ul li{font-size: 14px;font-weight: 400;}
+
+
+/* patchnote */
+#patchHL{background: #000000;}

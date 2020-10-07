@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/* cnt공통 */
+.read_more {position: relative;display: inline-block;transition: all 0.3s ease;text-align: center;font-weight: 600;color: #000;padding: 10px 25px;border-radius: 5px;width: 130px;height: 40px;line-height: 42px;padding: 0;border: none;background: #fff;margin-top: 60px;}
+.read_more:hover,.read_more:focus {color: #fff;background: transparent;}
+.read_more:before,.read_more:after{content:'';position:absolute;top:0;right:0;height:2px;width:0;background: #fff;transition:.2s ease all;}
+.read_more::after{right:inherit;top:38px;left:0;bottom:0;}
+.read_more:hover::before,.read_more:hover::after,.read_more:focus::before,.read_more:focus::after{width:100%;transition:.3s ease all;}
+
+/* .cnt1 */
+.cnt1{position:relative;height: 100vh;overflow: hidden;}
+.cnt1 iframe{position: absolute;top:-10%;left:-10%;width: auto;height:auto;min-width:130%;min-height: 130%;pointer-events: none;}
+
+/* .cnt2 */
+.cnt2{position: relative;height:calc(100vh - 60px);overflow: hidden;color: #fff;background: #000000;}
+.cnt2 #cnt2Bg{position: absolute;top:0;width: 200%;height: 100%;left:50%;transform:translateX(-50%);z-index: 0;}
+.cnt2 #cnt2Bg>div{position: absolute;top:0;width: 50%;height: 100%;-moz-box-sizing: border-box;box-sizing: border-box;transform: skew(30deg);overflow: hidden;}
+.cnt2 #cnt2Bg>.league_bg{left: 0;}
+.cnt2 #cnt2Bg>.patchnote_bg{right: 0;}
+.cnt2 #cnt2Bg> div::after{content:"";position: absolute;top: 0;width: 150%;height: 100%;transform: skew(-30deg);background: no-repeat;opacity: .2;}
+.cnt2 #cnt2Bg> .league_bg::after{background-image: url("../images/main/index-league-bg.jpg");left: 14%;}
+.cnt2 #cnt2Bg> .patchnote_bg::after{background-image: url("../images/main/index-patchnote-bg.jpg");left:-14%;}
+.cnt2 .area section{float:left;width: 50%;height: 100%;position: relative;z-index: 1;}
+.cnt2 section h3{font-size: 50px;padding-top: 100px;opacity: 0;}
+.cnt2 section .read_more{opacity: 0;}
+.cnt2 .cnt2_txt{font-family:SCDream;margin-top: 54px;}
+.cnt2 .cnt2_txt>li{opacity: 0;}
+.cnt2 .cnt2_txt li strong{display: inline-block;font-size: 24px;font-weight: 600;}
+.cnt2 .cnt2_txt li span,.cnt2 .cnt2_txt li p{font-size: 14px;font-weight: 400;}
+.cnt2 .cnt2_txt li p, .cnt2 .cnt2_txt li ul li,.cnt2 .cnt2_txt li span{font-size: 14px;line-height:1.3;}
+
+/* league */
+.cnt2 #league h3{margin-left: -100px;}
+.cnt2 #league .cnt2_txt>li{margin-left: -100px;}
+.cnt2 #league .cnt2_txt>li:nth-of-type(1){margin-top: 50px;}
+.cnt2 #league .cnt2_txt>li:nth-of-type(2){margin-top: 50px;}
+.cnt2 #league .cnt2_txt>li:nth-of-type(3){margin-top: 30px;}
+.cnt2 #league .cnt2_txt>li:nth-of-type(4){margin-top: 50px;}
+.cnt2 #league .cnt2_txt>li strong{margin-bottom: 10px;}
+.cnt2 #league .read_more{}
+/* patchnote */
+.cnt2 #patchnote{left:-5%;}
+.cnt2 #patchnote h3{margin-left: 50px;}
+.cnt2 #patchnote .cnt2_txt li{/* position: absolute; */ height: 55px;line-height: 55px;}
+.cnt2 #patchnote .cnt2_txt li:nth-of-type(1){margin-left:100px;}
+.cnt2 #patchnote .cnt2_txt li:nth-of-type(2){margin-left:170px;}
+.cnt2 #patchnote .cnt2_txt li:nth-of-type(3){margin-left:240px;}
+.cnt2 #patchnote .cnt2_txt li:nth-of-type(4){margin-left:310px;}
+.cnt2 #patchnote .cnt2_txt li+li{margin-top: 70px;}
+.cnt2 #patchnote .cnt2_txt li strong{display: inline-block;-moz-box-sizing: border-box;box-sizing:border-box;position: relative;padding: 0px 12px;color: #fff;font-size: 20px;}
+.cnt2 #patchnote .cnt2_txt li strong::before{content:"";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #355851;z-index: -1;transform: skew(30deg);}
+.cnt2 #patchnote .cnt2_txt li strong+span{margin-left: 10px;}
+.cnt2 #patchnote .cnt2_txt li span{letter-spacing: -0.05px;margin-right: 10px;position: relative;}
+.cnt2 #patchnote .cnt2_txt li span+span::before{content:"";position: absolute;top: 3px;left: -8px;width: 1px;height: 15px;background: #fff;}
+.cnt2 #patchnote .read_more{transform: skew(30deg);margin-left:370px;}
+.cnt2 #patchnote .read_more>span{display: inline-block;transform: skew(-30deg);color: #000000;}
+.cnt2 #patchnote .read_more:hover>span,.cnt2 #patchnote .read_more:focus>span{color: #ffffff;}
+/* .cnt3 banner */
+.cnt3{height: 240px;background: url("../images/main/index-banner-bg.jpg") no-repeat center / cover;color: #fff;}
+.cnt3 a{display: block;width: 100%;height: 100%;}
+.cnt3 .banner_txt{width: 750px;margin: 0 auto;text-align: left;padding-top: 40px;}
+.cnt3 .banner_txt strong{display: inline-block;font-size: 30px;}
+.cnt3 .banner_txt strong+p{font-size: 75px;margin-top: 10px;font-family:koverwatch, "맑은 고딕","Malgun Gothic", sans-serif;}
+.cnt3 .banner_txt strong+p span{color: #fde533;}
+.cnt3 .banner_txt p:last-of-type{font-size: 18px;font-weight: 400;margin-top: 10px;}
+.cnt3 .banner_txt strong,.cnt3 .banner_txt p:last-of-type{text-indent: 3px;}
+/* .cnt4 #storeNew */
+#storeNew{height:calc(100vh - 60px);color: #000;}
+#storeNew .store_bg{width: 100%;height: 300px;left: 0;bottom: 0;background: #dde4ec;}
+#storeNew .area{position: relative;padding-top: 100px;}
+#storeNew h2{font-size: 50px;margin-bottom: 35px;}
+#storeNew .area >p{font-size: 18px;font-weight: 400;margin-bottom: 20px;}
+#storeNew h2,#storeNew .area >p,#storeNew .area > span,#storeNew .read_more{opacity: 0;margin-left: -100px;}
+#storeNew .area > span+span {margin-left: 10px;}
+#storeNew .store_list{width: 800px;height: 800px;position: absolute;top: 40px;right: 70px;}
+#storeNew .store_list li{position: relative;float:left;width: 385px;color: #ffffff;overflow: hidden;}
+#storeNew .store_list li:nth-of-type(-n+2){margin-bottom: 30px;margin-top: 200px;}
+#storeNew .store_list li:nth-of-type(n+2){margin-bottom: 30px;margin-top: 200px;}
+#storeNew .store_list li:nth-of-type(odd){margin-right: 30px;}
+#storeNew .store_list li a{display: block;width: 100%;height: 385px;border-radius:0 0 0 50px;}
+#storeNew .store_list li a{background: no-repeat center / cover;transition:all .5s;}
+#storeNew .store_list li:nth-of-type(1) a{background-image:url("../images/main/index-store-image-keyboard.jpg");}
+#storeNew .store_list li:nth-of-type(2) a{background-image:url("../images/main/index-store-image-mouse.jpg");}
+#storeNew .store_list li:nth-of-type(3) a{background-image:url("../images/main/index-store-image-headset.jpg");}
+#storeNew .store_list li:nth-of-type(4) a{background-image:url("../images/main/index-store-image-controller.jpg");}
+#storeNew .store_list li a:hover,#storeNew .store_list li a:focus{transform:scale(1.1);}
+#storeNew .store_list li a div{position: absolute;bottom: 30px;width: 100%;text-align: center;}
+#storeNew .store_list li a strong{font-size: 18px;}
+#storeNew .store_list li a p{font-size: 16px;}
+#storeNew .read_more{display:block;color: #fff;background: #355851;margin-top: 30px;}
+#storeNew .read_more:hover,#storeNew .read_more:focus {color: #355851;background: transparent;}
+#storeNew .read_more:before,#storeNew .read_more:after{background: #355851;}
