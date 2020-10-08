@@ -66,7 +66,7 @@
 .cnt3 .banner_txt p:last-of-type{font-size: 18px;font-weight: 400;margin-top: 10px;}
 .cnt3 .banner_txt strong,.cnt3 .banner_txt p:last-of-type{text-indent: 3px;}
 /* .cnt4 #storeNew */
-#storeNew{height:calc(100vh - 60px);color: #000;}
+#storeNew{height:calc(100vh - 60px);color: #000;min-height:860px;}
 #storeNew .store_bg{width: 100%;height: 300px;left: 0;bottom: 0;background: #dde4ec;}
 #storeNew .area{position: relative;padding-top: 100px;}
 #storeNew h2{font-size: 50px;margin-bottom: 35px;}
@@ -75,6 +75,7 @@
 #storeNew .area > span+span {margin-left: 10px;}
 #storeNew .store_list{width: 800px;height: 800px;position: absolute;top: 40px;right: 70px;}
 #storeNew .store_list li{position: relative;float:left;width: 385px;color: #ffffff;overflow: hidden;}
+#storeNew .store_list li.on{outline:2px solid #000;}
 #storeNew .store_list li:nth-of-type(-n+2){margin-bottom: 30px;margin-top: 200px;}
 #storeNew .store_list li:nth-of-type(n+2){margin-bottom: 30px;margin-top: 200px;}
 #storeNew .store_list li:nth-of-type(odd){margin-right: 30px;}

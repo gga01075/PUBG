@@ -5,7 +5,7 @@
 .league_h2::after{background: url("../images/league/league_background3.jpg") -600px -50px;}
 .company_h2::after{background: url("../images/introduce/company-h2-bg.jpg");}
 .patchnote_h2::after{background: url("../images/patchnote/patch-h2-bg.jpg") no-repeat center / cover;}
-#container > section{width: 100%;height: calc(100vh - 60px);}
+#container > section{width: 100%;height: calc(100vh - 60px);min-height:860px;}
 #container section h3{font-family: koverwatch, "맑은 고딕", "Malgun Gothic", sans-serif;font-size: 50px;letter-spacing: 1px;font-weight: 400;}
 
 .read_more {position: relative;display: inline-block;transition: all 0.3s ease;text-align: center;font-weight: 600;color: #000;padding: 10px 25px;border-radius: 5px;width: 130px;height: 40px;line-height: 42px;padding: 0;border: none;background: #fff;margin-top: 60px;}
@@ -93,7 +93,7 @@
 #leagueIntr .img_bg{position: absolute;bottom: 70px;right: 0;width: 615px;height: 400px;background: #fff;z-index: 2;}
 
     /* #leagueSche */
-#leagueSche{padding-top: 100px;height: calc(100vh - 60px);box-sizing: border-box;}
+#leagueSche{padding-top: 100px;height: calc(100vh - 60px);box-sizing: border-box;min-height:860px;}
 #leagueSche h3{margin-bottom: 100px;}
 #leagueSche h3::after{content:"";position: absolute;bottom:-50px;left: 0;width: 160px;height: 2px;background: #fde533;}
 #leagueSche #calendar{width: 1000px;height: 580px;z-index: 2;background: url("../images/league/leagueSche/leagueSche-bg.jpg") no-repeat center / cover;padding-top: 50px;box-sizing: border-box;}
@@ -177,6 +177,7 @@
 #leagueRepl ul li p span{font-weight: 600;}
 #leagueRepl ul li .over{position: absolute;top: 0;left: 0;width: 100%;height: 100%;-moz-box-sizing: border-box;box-sizing: border-box;padding: 200px 30px;z-index: 100;opacity: 0;transition-delay: .3s;transition:.5s ease;text-align: center;}
 #leagueRepl ul li .over::after{content:"";position: absolute;top: 80px;left: calc(50% - 32px);width: 64px;height: 64px;background: url("../images/league/leagueRepl/play.png") no-repeat center;}
+#leagueRepl ul li.on{outline:2px solid #fff;}
 #leagueRepl ul li:hover .over,#leagueRepl ul li.on .over{opacity: 1;}
 #leagueRepl ul li::before,#leagueRepl ul li::after{content:"";position: absolute;transition:.5s ease-in-out;height: 200%;width: 200%;background: #000;}
 #leagueRepl ul li::before{right:0;bottom: 0;transform:skew(45deg) translateX(100%);background: rgba(123, 138, 139,.8);}
@@ -213,7 +214,7 @@
 #companyWort ul li .worth_txt p{font-size: 18px;margin-top: 30px;}
 
     /* #companyRout */
-#container #companyRout{height: calc(100vh - 316px);padding-top: 60px;-moz-box-sizing: border-box;box-sizing: border-box;color: #000;background: url("../images/introduce/companyRoute-bg.jpg") no-repeat center / cover;}
+#container #companyRout{height: calc(100vh - 316px);padding-top: 60px;-moz-box-sizing: border-box;box-sizing: border-box;color: #000;background: url("../images/introduce/companyRoute-bg.jpg") no-repeat center / cover;min-height: 604px;}
 #companyRout .area>*{float: left;}
 #companyRout .area iframe{border:none;position: relative;}
 /* #companyRout .area iframe:focus::after{content:"";position: absolute;top: 0;left: 0;z-index: 2;width:calc(100% + 1px);height: calc(100% + 1px);border: 1px solid #000;} */
