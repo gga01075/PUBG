@@ -37,7 +37,8 @@
 .cnt2 #league .cnt2_txt>li:nth-of-type(3){margin-top: 30px;}
 .cnt2 #league .cnt2_txt>li:nth-of-type(4){margin-top: 50px;}
 .cnt2 #league .cnt2_txt>li strong{margin-bottom: 10px;}
-.cnt2 #league .read_more{}
+.cnt2 #league .read_more,.cnt2 #league .read_more{color: #000000;}
+.cnt2 #league .read_more:hover,.cnt2 #league .read_more:focus {color: #fff;background: transparent;}
 /* patchnote */
 .cnt2 #patchnote{left:-5%;}
 .cnt2 #patchnote h3{margin-left: 50px;}

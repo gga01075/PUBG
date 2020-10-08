@@ -1,4 +1,15 @@
 $(function(){
+	//skip navigation 제어 
+	$('#skip a').on('click', function () {
+        var target = $(this).attr('href');
+        console.log(target);
+
+        $(target).attr('tabIndex', -1).focus();
+
+        return false;
+      });
+
+
 	//#header.active
 	$('#header').on('mouseenter focusin',function(){
 		$(this).addClass('active');

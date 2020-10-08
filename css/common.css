@@ -60,10 +60,10 @@ table{border-collapse: collapse;border-spacing: 0;}
 h1,h2,h3,h4,h5,h6{font-size: 100%;}
 header,section,nav,article,aside,section,figure{display: block;}
 input,select,button,textarea{font-family: inherit;font-size:inherit;color: inherit;font-weight: inherit;line-height:inherit;}
-fieldset,iframe{border: none;} 
-input[type="text"],input[type="password"],select{border: 1px solid #aaa;}
+fieldset, iframe{border:none;}
+input[type="text"],input[type="password"],select{border:1px solid #aaa;}
 input[type="submit"],input[type="reset"],input[type="button"],button{border:none;background:0;cursor:pointer;}
-address{font-style: normal;}
+address{font-style:normal;}
 caption{width: 1px;height: 1px;border:none;margin: -1px;overflow: hidden;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);} 
 
 
