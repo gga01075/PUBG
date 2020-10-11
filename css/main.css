@@ -8,11 +8,11 @@
 .read_more:hover::before,.read_more:hover::after,.read_more:focus::before,.read_more:focus::after{width:100%;transition:.3s ease all;}
 
 /* .cnt1 */
-.cnt1{position:relative;height: 100vh;overflow: hidden;}
+.cnt1{position:relative;height: 100vh;overflow: hidden;min-height: 920px;}
 .cnt1 iframe{position: absolute;top:-10%;left:-10%;width: auto;height:auto;min-width:130%;min-height: 130%;pointer-events: none;}
 
 /* .cnt2 */
-.cnt2{position: relative;height:calc(100vh - 60px);overflow: hidden;color: #fff;background: #000000;}
+.cnt2{position: relative;height:calc(100vh - 60px);overflow: hidden;color: #fff;background: #000000;min-height: 860px;}
 .cnt2 #cnt2Bg{position: absolute;top:0;width: 200%;height: 100%;left:50%;transform:translateX(-50%);z-index: 0;}
 .cnt2 #cnt2Bg>div{position: absolute;top:0;width: 50%;height: 100%;-moz-box-sizing: border-box;box-sizing: border-box;transform: skew(30deg);overflow: hidden;}
 .cnt2 #cnt2Bg>.league_bg{left: 0;}
@@ -58,7 +58,8 @@
 .cnt2 #patchnote .read_more:hover>span,.cnt2 #patchnote .read_more:focus>span{color: #ffffff;}
 /* .cnt3 banner */
 .cnt3{height: 240px;background: url("../images/main/index-banner-bg.jpg") no-repeat center / cover;color: #fff;}
-.cnt3 a{display: block;width: 100%;height: 100%;}
+.cnt3 a{display: block;width: 100%;height: 100%;position: relative;}
+.cnt3 a:focus::before{content:"";position: absolute;top: 0;left: 0;display: block;width: 100%;height: 100%;outline:2px solid red;}
 .cnt3 .banner_txt{width: 750px;margin: 0 auto;text-align: left;padding-top: 40px;}
 .cnt3 .banner_txt strong{display: inline-block;font-size: 30px;}
 .cnt3 .banner_txt strong+p{font-size: 75px;margin-top: 10px;font-family:koverwatch, "맑은 고딕","Malgun Gothic", sans-serif;}

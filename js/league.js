@@ -1,12 +1,17 @@
 $(function(){
+
     //league 스크롤이벤트      
     $(window).on('scroll',function(){ 
         // 대회소개
         if($(window).scrollTop() > $("#leagueIntr").offset().top - 400){
             gsap.to("#leagueIntr .intro_txt", {delay:0,left:70, opacity:1, duration: 0.5, ease:Power3.easeOut});
-            $('.pcs1_img').addClass('img_slide');
+            $('.pcs1_img').addClass('img_slide');  
         }
-        });  
+
+        console.log($(window).scrollTop);
+
+
+    });  
     
     //league 인디케이터 클릭이벤트
     $('.league_indi ul li a').on('click',function(e){
@@ -20,6 +25,7 @@ $(function(){
         e.preventDefault();
         $('html, body').animate({scrollTop : 0 }, 400);
     });
+
     
     //리그 스케쥴 클릭시 대회지역 해당 슬라이드 이동 
     $('#leagueSche tbody tr a').on('click',function(){

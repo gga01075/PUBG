@@ -6,7 +6,7 @@
     <title>league : PUBG</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/sub.css">
-    <link rel="icon" href="/images/common/favicon.ico">
+    <link rel="icon" href="../images/common/favicon.ico" type="image/x-icon">
     <script src="../js/jquery-1.12.4.min.js"></script>
     <script src="../js/gsap.min.js"></script>
     <script src="../js/jquery.bxslider.min.js"></script>
@@ -30,7 +30,7 @@
         <a href="#container">본문 바로가기</a>
     </div>
     <!-- header -->
-    <header id="header">
+    <header id="header" class="min_w">
         <div class="header_top">
             <h1 class="logo"><a href="../index.html"><img src="../images/common/index_logo.png" alt="PUBG"></a></h1>
         </div>
@@ -45,7 +45,7 @@
                         <li><a href="#">CHI</a></li>
                     </ul>
                 </div>
-                <button class="login_btn" type="button" aria-haspopup="true" title="로그인 팝업창 열기" data-href="#login_box">LOGIN</button>
+                <button class="login_btn" type="button" aria-haspopup="dialog" title="로그인 팝업창 열기" data-href="#login_box">LOGIN</button>
                 <a class="buynow" href="buynow.html">BUY NOW</a>
             </div>
             <nav id="gnb">
@@ -116,7 +116,7 @@
          </div>
         <div class="cnt12_bg">
             <!-- 대회소개 -->
-            <section class="cnt1" id="leagueIntr">
+            <section class="cnt1 min_w" id="leagueIntr">
                 <div class="area p_r">
                     <div class="intro_txt p_a">
                          <h3 class="font2">PUBG CONTINENTAL SERIES2</h3>
@@ -153,7 +153,7 @@
                 <div class="area">
                      <h3 class="p_r">PCS2 SCHEDULES</h3>
                      <div id="calendar" class="p_r">
-                        <table role="grid" aria-labelledby="pcs2Schedule">
+                        <table role="grid">
                             <caption id="pcs2Schedule">PCS2 리그 일정표</caption>
                             <colgroup>
                                 <col class="w130" span="7">
@@ -248,40 +248,54 @@
                         <div class="teamlist">
                             <ul>
                                 <li>
-                                    <div class="nation"><img src="../images/league/leagueTeam/ASIA/nation/korea.png" alt="한국"></div>
-                                    <ul class="team">
-                                        <li><img src="../images/league/leagueTeam/ASIA/Korea/t1.PNG" alt=""><span>t1</span></li>
-                                        <li><img src="../images/league/leagueTeam/ASIA/Korea/VRLU_GHIBLI.png" alt=""><span>VRLU GHIBLI</span></li>
-                                        <li><img src="../images/league/leagueTeam/ASIA/Korea/AFREECA_FREECS.png" alt=""><span>AFREECA FREECS</span></li>
-                                        <li><img src="../images/league/leagueTeam/ASIA/Korea/OGN_ENTUS.png" alt=""><span>OGN ENTUS</span></li>
-                                        <li><img src="../images/league/leagueTeam/ASIA/Korea/SEOLHAEONE_PRINCE.png" alt=""><span>SEOLHAEONE PRINCE</span></li>
-                                        <li><img src="../images/league/leagueTeam/ASIA/Korea/LAVEGA_ESPORTS.png" alt=""><span>LAVEGA ESPORTS</span></li>
-                                    </ul>
+                                    <dl>
+                                        <dt class="nation"><img src="../images/league/leagueTeam/ASIA/nation/korea.png" alt="한국"></dt>
+                                        <dd>
+                                            <ul class="team">
+                                                <li><img src="../images/league/leagueTeam/ASIA/Korea/t1.PNG" alt=""><p>t1</p></li>
+                                                <li><img src="../images/league/leagueTeam/ASIA/Korea/VRLU_GHIBLI.png" alt=""><p>VRLU GHIBLI</p></li>
+                                                <li><img src="../images/league/leagueTeam/ASIA/Korea/AFREECA_FREECS.png" alt=""><p>AFREECA FREECS</p></li>
+                                                <li><img src="../images/league/leagueTeam/ASIA/Korea/OGN_ENTUS.png" alt=""><p>OGN ENTUS</p></li>
+                                                <li><img src="../images/league/leagueTeam/ASIA/Korea/SEOLHAEONE_PRINCE.png" alt=""><p>SEOLHAEONE PRINCE</p></li>
+                                                <li><img src="../images/league/leagueTeam/ASIA/Korea/LAVEGA_ESPORTS.png" alt=""><p>LAVEGA ESPORTS</p></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
                                 </li>
                                 <li>
-                                    <div class="nation"><img src="../images/league/leagueTeam/ASIA/nation/china.PNG" alt="중국"></div>
-                                    <ul class="team">
-                                        <li><img src="../images/league/leagueTeam/ASIA/China/CHAMPION_OF_COMPETITION.png" alt=""><span>COC</span></li>
-                                        <li><img src="../images/league/leagueTeam/ASIA/China/FourAngryMan.png" alt=""><span>4AM</span></li>
-                                        <li><img src="../images/league/leagueTeam/ASIA/China/infantry.PNG" alt=""><span>infantry</span></li>
-                                        <li><img src="../images/league/leagueTeam/ASIA/China/STILL_MOVING_UNDER_GUNFIRE.png" alt=""><span>SMG</span></li>
-                                        <li><img src="../images/league/leagueTeam/ASIA/China/TIANBA.png" alt=""><span>TIANBA</span></li>
-                                        <li><img src="../images/league/leagueTeam/ASIA/China/TRIUMPHANT_SONG_GAMING.png" alt=""><span>TSG</span></li>
-                                    </ul>
+                                    <dl>
+                                        <dt class="nation"><img src="../images/league/leagueTeam/ASIA/nation/china.PNG" alt="중국"></dt>
+                                        <dd>                                    <ul class="team">
+                                            <li><img src="../images/league/leagueTeam/ASIA/China/CHAMPION_OF_COMPETITION.png" alt=""><p>COC</p></li>
+                                            <li><img src="../images/league/leagueTeam/ASIA/China/FourAngryMan.png" alt=""><p>4AM</p></li>
+                                            <li><img src="../images/league/leagueTeam/ASIA/China/infantry.PNG" alt=""><p>infantry</p></li>
+                                            <li><img src="../images/league/leagueTeam/ASIA/China/STILL_MOVING_UNDER_GUNFIRE.png" alt=""><p>SMG</p></li>
+                                            <li><img src="../images/league/leagueTeam/ASIA/China/TIANBA.png" alt=""><p>TIANBA</p></li>
+                                            <li><img src="../images/league/leagueTeam/ASIA/China/TRIUMPHANT_SONG_GAMING.png" alt=""><p>TSG</p></li>
+                                        </ul></dd>
+                                    </dl>
                                 </li>
                                 <li class="t2">
-                                    <div class="nation"><img src="../images/league/leagueTeam/ASIA/nation/taiwan.PNG" alt="대만"></div>
-                                    <ul class="team">
-                                        <li><img src="../images/league/leagueTeam/ASIA/Taiwan/GLOBAL_ESPORTS_XSSET_ACE.png" alt=""><span>GEXA</span></li>
-                                        <li><img src="../images/league/leagueTeam/ASIA/Taiwan/TEAM_SADES.png" alt=""><span>TEAM SADES</span></li>
-                                    </ul>
+                                    <dl>
+                                        <dt class="nation"><img src="../images/league/leagueTeam/ASIA/nation/taiwan.PNG" alt="대만"></dt>
+                                        <dd>
+                                            <ul class="team">
+                                                <li><img src="../images/league/leagueTeam/ASIA/Taiwan/GLOBAL_ESPORTS_XSSET_ACE.png" alt=""><p>GEXA</p></li>
+                                                <li><img src="../images/league/leagueTeam/ASIA/Taiwan/TEAM_SADES.png" alt=""><p>TEAM SADES</p></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
                                 </li>
                                 <li class="t2">
-                                    <div class="nation"><img src="../images/league/leagueTeam/ASIA/nation/Japan.PNG" alt="일본"></div>
-                                    <ul class="team">
-                                        <li><img src="../images/league/leagueTeam/ASIA/Japan/ELEMENT36.png" alt=""><span>ELEMENT36</span></li>
-                                        <li><img src="../images/league/leagueTeam/ASIA/Japan/SUNSISTER.png" alt=""><span>SUNSISTER</span></li>      
-                                    </ul>
+                                    <dl>
+                                        <dt class="nation"><img src="../images/league/leagueTeam/ASIA/nation/Japan.PNG" alt="일본"></dt>
+                                        <dd>
+                                            <ul class="team">
+                                                <li><img src="../images/league/leagueTeam/ASIA/Japan/ELEMENT36.png" alt=""><p>ELEMENT36</p></li>
+                                                <li><img src="../images/league/leagueTeam/ASIA/Japan/SUNSISTER.png" alt=""><p>SUNSISTER</p></li>      
+                                            </ul>
+                                        </dd>
+                                    </dl>
                                 </li>
                             </ul>
                         </div>
@@ -292,50 +306,74 @@
                         <div class="teamlist">
                             <ul>
                                 <li>
-                                    <div class="nation"><img src="../images/league/leagueTeam/APAC/nation/Thailand.PNG" alt="태국"></div>
-                                    <ul class="team">
-                                        <li><img src="../images/league/leagueTeam/APAC/Thailand/Buriram_United_Esports.png" alt=""><span>BUE</span></li>
-                                        <li><img src="../images/league/leagueTeam/APAC/Thailand/Daytrade_Gaming.png" alt=""><span>DG</span></li>
-                                        <li><img src="../images/league/leagueTeam/APAC/Thailand/Kaiser_Tuna.png" alt=""><span>KAISER TUNA</span></li>
-                                        <li><img src="../images/league/leagueTeam/APAC/Thailand/Magic_Esports.png" alt=""><span>Magic Esports</span></li>
-                                        <li><img src="../images/league/leagueTeam/APAC/Thailand/MSC_Theerathon.png" alt=""><span>MSC Theerathon</span></li>
-                                    </ul>
+                                    <dl>
+                                        <dt class="nation"><img src="../images/league/leagueTeam/APAC/nation/Thailand.PNG" alt="태국"></dt>
+                                        <dd>
+                                            <ul class="team">
+                                                <li><img src="../images/league/leagueTeam/APAC/Thailand/Buriram_United_Esports.png" alt=""><p>BUE</p></li>
+                                                <li><img src="../images/league/leagueTeam/APAC/Thailand/Daytrade_Gaming.png" alt=""><p>DG</p></li>
+                                                <li><img src="../images/league/leagueTeam/APAC/Thailand/Kaiser_Tuna.png" alt=""><p>KAISER TUNA</p></li>
+                                                <li><img src="../images/league/leagueTeam/APAC/Thailand/Magic_Esports.png" alt=""><p>Magic Esports</p></li>
+                                                <li><img src="../images/league/leagueTeam/APAC/Thailand/MSC_Theerathon.png" alt=""><p>MSC Theerathon</p></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
                                 </li>
                                 <li>
-                                    <div class="nation"><img src="../images/league/leagueTeam/APAC/nation/Vietnam.png" alt="베트남"></div>
-                                    <ul class="team">
-                                        <li><img src="../images/league/leagueTeam/APAC/Vietnam/Cerberus_Esports.png" alt=""><span>Cerberus Esports</span></li>
-                                        <li><img src="../images/league/leagueTeam/APAC/Vietnam/Divine_Esports.png" alt=""><span>Divine Esports</span></li>
-                                        <li><img src="../images/league/leagueTeam/APAC/Vietnam/DivisionX_Gaming.png" alt=""><span>DivisionX Gaming</span></li>
-                                        <li><img src="../images/league/leagueTeam/APAC/Vietnam/GameHome_Esports.png" alt=""><span>GameHome Esports</span></li>
-                                        <li><img src="../images/league/leagueTeam/APAC/Vietnam/X-Stadium_Thu_Duc.png" alt=""><span>X-Stadium Thu Duc</span></li>
-                                    </ul>
+                                    <dl>
+                                        <dt class="nation"><img src="../images/league/leagueTeam/APAC/nation/Vietnam.png" alt="베트남"></dt>
+                                        <dd>
+                                            <ul class="team">
+                                                <li><img src="../images/league/leagueTeam/APAC/Vietnam/Cerberus_Esports.png" alt=""><p>Cerberus Esports</p></li>
+                                                <li><img src="../images/league/leagueTeam/APAC/Vietnam/Divine_Esports.png" alt=""><p>Divine Esports</p></li>
+                                                <li><img src="../images/league/leagueTeam/APAC/Vietnam/DivisionX_Gaming.png" alt=""><p>DivisionX Gaming</p></li>
+                                                <li><img src="../images/league/leagueTeam/APAC/Vietnam/GameHome_Esports.png" alt=""><p>GameHome Esports</p></li>
+                                                <li><img src="../images/league/leagueTeam/APAC/Vietnam/X-Stadium_Thu_Duc.png" alt=""><p>X-Stadium Thu Duc</p></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>                        
                                 </li>
                                 <li class="t2">
-                                    <div class="nation"><img src="../images/league/leagueTeam/APAC/nation/Australia.png" alt="오스트레일리아"></div>
-                                    <ul class="team">
-                                        <li><img src="../images/league/leagueTeam/APAC/Australia/ASTRA.png" alt=""><span>ASTRA</span></li>
-                                        <li><img src="../images/league/leagueTeam/APAC/Australia/FURY_AUSTRALIA.png" alt=""><span>FURY</span></li>
-                                    </ul>
+                                    <dl>
+                                        <dt class="nation"><img src="../images/league/leagueTeam/APAC/nation/Australia.png" alt="오스트레일리아"></dt>
+                                        <dd>
+                                            <ul class="team">
+                                                <li><img src="../images/league/leagueTeam/APAC/Australia/ASTRA.png" alt=""><p>ASTRA</p></li>
+                                                <li><img src="../images/league/leagueTeam/APAC/Australia/FURY_AUSTRALIA.png" alt=""><p>FURY</p></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
                                 </li>
                                 <li class="t2">
-                                    <div class="nation"><img src="../images/league/leagueTeam/APAC/nation/Indonesia.PNG" alt="인도네시아"></div>
-                                    <ul class="team">
-                                        <li><img src="../images/league/leagueTeam/APAC/Indonesia/FROM_THE_FUTURE.png" alt=""><span>FROM THE FUTURE</span></li>
-                                        <li><img src="../images/league/leagueTeam/APAC/Indonesia/VICTIM_RISE.png" alt=""><span>VICTIM RISE</span></li>      
-                                    </ul>
+                                    <dl>
+                                        <dt class="nation"><img src="../images/league/leagueTeam/APAC/nation/Indonesia.PNG" alt="인도네시아"></dt>
+                                        <dd>
+                                            <ul class="team">
+                                                <li><img src="../images/league/leagueTeam/APAC/Indonesia/FROM_THE_FUTURE.png" alt=""><p>FROM THE FUTURE</p></li>
+                                                <li><img src="../images/league/leagueTeam/APAC/Indonesia/VICTIM_RISE.png" alt=""><p>VICTIM RISE</p></li>      
+                                            </ul>
+                                        </dd>
+                                    </dl>
                                 </li>
                                 <li class="t2">
-                                    <div class="nation"><img src="../images/league/leagueTeam/APAC/nation/Malaysia.png" alt="말레이시아"></div>
-                                    <ul class="team">
-                                        <li><img src="../images/league/leagueTeam/APAC/Malaysia/BATTLE_ARENA_ELITES.png" alt=""><span>BATTLE ARENA ELITES</span></li>   
-                                    </ul>
+                                    <dl>
+                                        <dt class="nation"><img src="../images/league/leagueTeam/APAC/nation/Malaysia.png" alt="말레이시아"></dt>
+                                        <dd>
+                                            <ul class="team">
+                                                <li><img src="../images/league/leagueTeam/APAC/Malaysia/BATTLE_ARENA_ELITES.png" alt=""><p>BATTLE ARENA ELITES</p></li>   
+                                            </ul>
+                                        </dd>
+                                    </dl>
                                 </li>
                                 <li class="t2">
-                                    <div class="nation"><img src="../images/league/leagueTeam/APAC/nation/Philippines.png" alt="필리핀"></div>
-                                    <ul class="team">
-                                        <li><img src="../images/league/leagueTeam/APAC/Philippines/ARKANGEL_PREDATOR.png" alt=""><span>ARKANGEL PREDATOR</span></li>    
-                                    </ul>
+                                    <dl>
+                                        <dt class="nation"><img src="../images/league/leagueTeam/APAC/nation/Philippines.png" alt="필리핀"></dt>
+                                        <dd>
+                                            <ul class="team">
+                                                <li><img src="../images/league/leagueTeam/APAC/Philippines/ARKANGEL_PREDATOR.png" alt=""><p>ARKANGEL PREDATOR</p></li>    
+                                            </ul>
+                                        </dd>
+                                    </dl>
                                 </li>
                             </ul>
                         </div>
@@ -346,64 +384,95 @@
                         <div class="teamlist">
                             <ul>
                                 <li>
-                                    <div class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Turkey.PNG" alt="터키"></div>
-                                    <ul class="team">
-                                        <li><img src="../images/league/leagueTeam/EUROPE/Turkey/BLAZE_ESPORTS.png" alt=""><span>BLAZE ESPORTS</span></li>
-                                        <li><img src="../images/league/leagueTeam/EUROPE/Turkey/Etiget_Esports.png" alt=""><span>Etiget Esports</span></li>
-                                        <li><img src="../images/league/leagueTeam/EUROPE/Turkey/Istanbul_Wild_Cats.png" alt=""><span>Istanbul Wild Cats</span></li>
-                                        <li><img src="../images/league/leagueTeam/EUROPE/Turkey/TSM.png" alt=""><span>TSM</span></li>
-                                    </ul>
+                                    <dl>
+                                        <dt class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Turkey.PNG" alt="터키"></dt>
+                                        <dd>
+                                            <ul class="team">
+                                                <li><img src="../images/league/leagueTeam/EUROPE/Turkey/BLAZE_ESPORTS.png" alt=""><p>BLAZE ESPORTS</p></li>
+                                                <li><img src="../images/league/leagueTeam/EUROPE/Turkey/Etiget_Esports.png" alt=""><p>Etiget Esports</p></li>
+                                                <li><img src="../images/league/leagueTeam/EUROPE/Turkey/Istanbul_Wild_Cats.png" alt=""><p>Istanbul Wild Cats</p></li>
+                                                <li><img src="../images/league/leagueTeam/EUROPE/Turkey/TSM.png" alt=""><p>TSM</p></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
                                 </li>
                                 <li class="t2">
-                                    <div class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Russia.PNG" alt="러시아"></div>
-                                    <ul class="team">
-                                        <li><img src="../images/league/leagueTeam/EUROPE/Russia/Northern_Lights.png" alt=""><span>Northern Lights</span></li>
-                                        <li><img src="../images/league/leagueTeam/EUROPE/Russia/ShiftW.png" alt=""><span>ShiftW</span></li>
-                                        <li><img src="../images/league/leagueTeam/EUROPE/Russia/Tornado_Energy.png" alt=""><span>Tornado Energy</span></li>
-                                    </ul>
+                                    <dl>
+                                        <dt class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Russia.PNG" alt="러시아"></dt>
+                                        <dd>
+                                            <ul class="team">
+                                                <li><img src="../images/league/leagueTeam/EUROPE/Russia/Northern_Lights.png" alt=""><p>Northern Lights</p></li>
+                                                <li><img src="../images/league/leagueTeam/EUROPE/Russia/ShiftW.png" alt=""><p>ShiftW</p></li>
+                                                <li><img src="../images/league/leagueTeam/EUROPE/Russia/Tornado_Energy.png" alt=""><p>Tornado Energy</p></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
                                 </li>
                                 <li class="t2">
-                                    <div class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Ukraine.PNG" alt="우크라이나"></div>
-                                    <ul class="team">
-                                        <li><img src="../images/league/leagueTeam/EUROPE/Ukraine/Natus_Vincere.png" alt=""><span>Natus Vincere</span></li>
-                                        <li><img src="../images/league/leagueTeam/EUROPE/Ukraine/Winstreak.png" alt=""><span>Winstreak</span></li>
-                                    </ul>
+                                    <dl>
+                                        <dt class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Ukraine.PNG" alt="우크라이나"></dt>
+                                        <dd>
+                                            <ul class="team">
+                                                <li><img src="../images/league/leagueTeam/EUROPE/Ukraine/Natus_Vincere.png" alt=""><p>Natus Vincere</p></li>
+                                                <li><img src="../images/league/leagueTeam/EUROPE/Ukraine/Winstreak.png" alt=""><p>Winstreak</p></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
                                 </li>
                                 <li class="t2">
-                                    <div class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/France.PNG" alt="프랑스"></div>
-                                    <ul class="team">
-                                        <li><img src="../images/league/leagueTeam/EUROPE/France/Adepts.png" alt=""><span>Adepts</span></li>
-                                        <li><img src="../images/league/leagueTeam/EUROPE/France/Raise_Your_Edge.png" alt=""><span>Raise Your Edge</span></li>      
-                                    </ul>
+                                    <dl>
+                                        <dt class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/France.PNG" alt="프랑스"></dt>
+                                        <dd>
+                                            <ul class="team">
+                                                <li><img src="../images/league/leagueTeam/EUROPE/France/Adepts.png" alt=""><p>Adepts</p></li>
+                                                <li><img src="../images/league/leagueTeam/EUROPE/France/Raise_Your_Edge.png" alt=""><p>Raise Your Edge</p></li>      
+                                            </ul>
+                                        </dd>
+                                    </dl>                   
                                 </li>
                                 <li class="t2">
-                                    <div class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Finland.PNG" alt="핀란드"></div>
-                                    <ul class="team">
-                                        <li><img src="../images/league/leagueTeam/EUROPE/Finland/ENCE.png" alt=""><span>ENCE</span></li>   
-                                        <li><img src="../images/league/leagueTeam/EUROPE/Finland/Team_Liquid.png" alt=""><span>Team Liquid</span></li>   
-                                    </ul>
+                                    <dl>
+                                        <dt class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Finland.PNG" alt="핀란드"></dt>
+                                        <dd>
+                                            <ul class="team">
+                                                <li><img src="../images/league/leagueTeam/EUROPE/Finland/ENCE.png" alt=""><p>ENCE</p></li>   
+                                                <li><img src="../images/league/leagueTeam/EUROPE/Finland/Team_Liquid.png" alt=""><p>Team Liquid</p></li>   
+                                            </ul>
+                                        </dd>
+                                    </dl>
                                 </li>
                                 <li class="t1">
-                                    <div class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Norway.PNG" alt="노르웨이"></div>
-                                    <ul class="team">
-                                        <li><img src="../images/league/leagueTeam/EUROPE/Norway/Omaken_Sports.png" alt=""><span>Omaken Sports</span></li>    
-                                    </ul>
+                                    <dl>
+                                        <dt class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Norway.PNG" alt="노르웨이"></dt>
+                                        <dd>
+                                            <ul class="team">
+                                                <li><img src="../images/league/leagueTeam/EUROPE/Norway/Omaken_Sports.png" alt=""><p>Omaken Sports</p></li>    
+                                            </ul>
+                                        </dd>
+                                    </dl>
                                 </li>
                                 <li class="t1">
-                                    <div class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Denmark.PNG" alt="덴마크"></div>
-                                    <ul class="team">
-                                        <li><img src="../images/league/leagueTeam/EUROPE/Denmark/Bystanders.png" alt=""><span>Bystanders</span></li>    
-                                    </ul>
+                                    <dl>
+                                        <dt class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Denmark.PNG" alt="덴마크"></dt>
+                                        <dd>
+                                            <ul class="team">
+                                                <li><img src="../images/league/leagueTeam/EUROPE/Denmark/Bystanders.png" alt=""><p>Bystanders</p></li>    
+                                            </ul>
+                                        </dd>
+                                    </dl>
                                 </li>
                                 <li class="t1">
-                                    <div class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Sweden.PNG" alt="스웨덴"></div>
-                                    <ul class="team">
-                                        <li><img src="../images/league/leagueTeam/EUROPE/Sweden/FaZe_Clan.png" alt=""><span>FaZe Clan</span></li>    
-                                    </ul>
+                                    <dl>
+                                        <dt class="nation"><img src="../images/league/leagueTeam/EUROPE/nation/Sweden.PNG" alt="스웨덴"></dt>
+                                        <dd>
+                                            <ul class="team">
+                                                <li><img src="../images/league/leagueTeam/EUROPE/Sweden/FaZe_Clan.png" alt=""><p>FaZe Clan</p></li>    
+                                            </ul>
+                                        </dd>
+                                    </dl>
                                 </li>
                             </ul>
                         </div>
-
                     </div>
                     <div class="slide4 team_slide">
                         <h4 id="slide4_tit">NORTH AMERICA</h4>
@@ -411,26 +480,29 @@
                         <div class="teamlist">
                             <ul>
                                 <li>
-                                    <div class="nation"><img src="../images/league/leagueTeam/USA/usa.PNG" alt="미국"></div>
-                                    <ul class="team">
-                                        <li><img src="../images/league/leagueTeam/USA/303_Esports.png" alt=""><span>303 Esports</span></li>
-                                        <li><img src="../images/league/leagueTeam/USA/Any_Trolls_in_Chat.png" alt=""><span>Any Trolls in Chat</span></li>
-                                        <li><img src="../images/league/leagueTeam/USA/Carnage_Gaming.png" alt=""><span>Carnage Gaming.png</span></li>
-                                        <li><img src="../images/league/leagueTeam/USA/Comets.png" alt=""><span>Comets</span></li>
-                                        <li><img src="../images/league/leagueTeam/USA/Dodge.png" alt=""><span>Dodge</span></li>
-                                        <li><img src="../images/league/leagueTeam/USA/Duel.png" alt=""><span>Duel</span></li>
-                                        <li><img src="../images/league/leagueTeam/USA/Fabled.png" alt=""><span>Fabled</span></li>
-                                        <li><img src="../images/league/leagueTeam/USA/Houston_Hardshifts.png" alt=""><span>Houston Hardshifts</span></li>
-                                        <li><img src="../images/league/leagueTeam/USA/Illusion.png" alt=""><span>Illusion</span></li>
-                                        <li><img src="../images/league/leagueTeam/USA/Liberate.png" alt=""><span>Liberate</span></li>
-                                        <li><img src="../images/league/leagueTeam/USA/Oath.png" alt=""><span>Oath</span></li>
-                                        <li><img src="../images/league/leagueTeam/USA/Radiance.png" alt=""><span>Radiance</span></li>
-                                        <li><img src="../images/league/leagueTeam/USA/Shoot_To_Kill.png" alt=""><span>Shoot To Kill</span></li>
-                                        <li><img src="../images/league/leagueTeam/USA/Soniqs.png" alt=""><span>Soniqs</span></li>
-                                        <li><img src="../images/league/leagueTeam/USA/Team-Veritas.png" alt=""><span>Team-Veritas</span></li>
-                                        <li><img src="../images/league/leagueTeam/USA/Zenith_Esports.png" alt=""><span>Zenith Esports</span></li>
-
-                                    </ul>
+                                    <dl>
+                                        <dt class="nation"><img src="../images/league/leagueTeam/USA/usa.PNG" alt="미국"></dt>
+                                        <dd>
+                                            <ul class="team">
+                                                <li><img src="../images/league/leagueTeam/USA/303_Esports.png" alt=""><p>303 Esports</p></li>
+                                                <li><img src="../images/league/leagueTeam/USA/Any_Trolls_in_Chat.png" alt=""><p>Any Trolls in Chat</p></li>
+                                                <li><img src="../images/league/leagueTeam/USA/Carnage_Gaming.png" alt=""><p>Carnage Gaming.png</p></li>
+                                                <li><img src="../images/league/leagueTeam/USA/Comets.png" alt=""><p>Comets</p></li>
+                                                <li><img src="../images/league/leagueTeam/USA/Dodge.png" alt=""><p>Dodge</p></li>
+                                                <li><img src="../images/league/leagueTeam/USA/Duel.png" alt=""><p>Duel</p></li>
+                                                <li><img src="../images/league/leagueTeam/USA/Fabled.png" alt=""><p>Fabled</p></li>
+                                                <li><img src="../images/league/leagueTeam/USA/Houston_Hardshifts.png" alt=""><p>Houston Hardshifts</p></li>
+                                                <li><img src="../images/league/leagueTeam/USA/Illusion.png" alt=""><p>Illusion</p></li>
+                                                <li><img src="../images/league/leagueTeam/USA/Liberate.png" alt=""><p>Liberate</p></li>
+                                                <li><img src="../images/league/leagueTeam/USA/Oath.png" alt=""><p>Oath</p></li>
+                                                <li><img src="../images/league/leagueTeam/USA/Radiance.png" alt=""><p>Radiance</p></li>
+                                                <li><img src="../images/league/leagueTeam/USA/Shoot_To_Kill.png" alt=""><p>Shoot To Kill</p></li>
+                                                <li><img src="../images/league/leagueTeam/USA/Soniqs.png" alt=""><p>Soniqs</p></li>
+                                                <li><img src="../images/league/leagueTeam/USA/Team-Veritas.png" alt=""><p>Team-Veritas</p></li>
+                                                <li><img src="../images/league/leagueTeam/USA/Zenith_Esports.png" alt=""><p>Zenith Esports</p></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
                                 </li>
                             </ul>
                         </div>
@@ -514,8 +586,8 @@
             </div>
         </div>
 </footer>
-<div id="login_box">
-    <strong>Sign In</strong>
+<div id="login_box" role="dialog" aria-modal="true" aria-labelledby="modal_tit">
+    <strong id="modal_tit">Sign In</strong>
     <form action="#" method="post">
         <div>
             <label for="uid"><img src="../images/common/user.png" alt="아이디"  ></label>
@@ -523,7 +595,7 @@
         </div>
         <div>
             <label for="upw"><img src="../images/common/lock.png" alt="비밀번호"></label>
-            <input type="password" id="upw" name="uid"> 
+            <input type="password" id="upw" name="uid" maxlength="12"> 
         </div>
         <button type="submit">Sign In</button>
     </form>

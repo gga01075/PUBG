@@ -16,7 +16,7 @@
 
 /* league */
 /* league indicator */
-.league_indi{position: fixed;top: 50%;right: 3%;transform:translateY(-50%);z-index: 10;text-align: center;color:rgba(0,0,0,.8);font-weight: 400;}
+.league_indi{position: fixed;top: 50%;right: 3%;transform:translateY(-50%);z-index: 899;text-align: center;color:rgba(0,0,0,.8);font-weight: 400;}
 .league_indi ul li+li{margin-top: 2px;}
 .league_indi ul li a{display: block;width: 130px;height: 110px;line-height: 110px;background: #968719;transform:skewY(-15deg);position: relative;z-index: 2;}
 .league_indi ul li a:hover,.league_indi ul li a:focus{background: #fde533;color:rgba(0,0,0,1);font-weight: 600;}
@@ -44,13 +44,13 @@
 
 #leagueIntr .pcs1_img::before{background: #ccc;z-index: 10;}
 #leagueIntr .pcs1_img{right: 30px;bottom: 100px;width: 615px;height: 400px;}
-#leagueIntr .pcs1_img::after{background: #333333;-webkit-animation:imgbg-ani 2s forwards;-o-animation:imgbg-ani 2s forwards;animation:imgbg-ani 2s forwards;z-index: 12;}
+#leagueIntr .pcs1_img::after{background: #333333;z-index: 12;}
 #leagueIntr .pcs1_img img{width: 615px;height: 400px;position: relative;z-index: 11;opacity: 0;}
 
 #leagueIntr .pcs1_img.img_slide::after{background: #333333;-webkit-animation:imgbg-ani 3s forwards;-o-animation:imgbg-ani 3s forwards;animation:imgbg-ani 3s forwards;z-index: 12;}
 #leagueIntr .pcs1_img.img_slide img{-webkit-animation: img-ani 3s forwards;-o-animation: img-ani 3s forwards;animation: img-ani 3s forwards;}
 
-@-webkit-keyframes imgbg-ani{
+ @-webkit-keyframes imgbg-ani{
     0%{transform-origin:left center;transform:scaleX(0);}
     15%{transform-origin:left center;transform:scaleX(0);}
     50%{transform-origin:left center;transform:scaleX(1);}
@@ -70,7 +70,7 @@
     50%{transform-origin:left center;transform:scaleX(1);}
     55%{transform-origin:right center;transform:scaleX(1);}
     100%{transform-origin:right center;transform:scaleX(0);}
-}
+} 
 
 @-webkit-keyframes img-ani{
     0%{opacity: 0;}
@@ -112,6 +112,7 @@
 #leagueSche #calendar td .month_math{position: absolute;top: 10px;left: 13px;font-size: 26px;}
 #leagueSche #calendar td .month_eng{position: absolute;top: 17px;left: 34px;font-size: 14px;}
 #leagueSche #calendar td a{position: absolute;left: 15px;z-index: 5;width: 237px;height: 30px;line-height: 30px;font-size: 14px;font-weight: 600;color: #000;text-align: center;}
+#leagueSche #calendar td a:focus::after{content:"";position: absolute;top: 0;left: 0;width: 100%;height: 100%;border:1px solid #fff;}
 #leagueSche #calendar td a:first-of-type{top: 48px;}
 #leagueSche #calendar td a:last-of-type{top: 85px;}
 #leagueSche #calendar td a.cal_asia{background: #c3a214;}
@@ -167,7 +168,7 @@
 
 
     /* #leagueRepl */
-#leagueRepl.cnt4{background: url("../images/league/leagueRepl/leagueRepl-bg.jpg") no-repeat center / cover;height: calc(100vh - 320px);}
+#leagueRepl.cnt4{background: url("../images/league/leagueRepl/leagueRepl-bg.jpg") no-repeat center / cover;height: calc(100vh - 320px);min-height:600px;}
 #leagueRepl.cnt4 .area{padding-top:80px;}
 #leagueRepl h3{margin-bottom: 50px;}
 #leagueRepl ul li{position: relative;float: left;box-shadow: 5px 5px 2px rgba(0,0,0,.4);overflow: hidden;font-size: 20px;}
@@ -250,15 +251,16 @@
 #patchMap .area h3{text-align: center;}
 #patchMap .area #mapTab{width: 1176px;height: 543px;margin: 140px auto;}
 #mapTab .tablist{}
-#mapTab .tablist .tab{float:left;width: 392px;height: 60px;line-height: 60px;text-align: center;font-size: 20px;cursor: pointer;box-sizing: border-box;background: #000;color: #fff;}
+#mapTab .tablist .tab{position: relative;float:left;width: 392px;height: 60px;line-height: 60px;text-align: center;font-size: 20px;cursor: pointer;box-sizing: border-box;background: #000;color: #fff;}
 #mapTab .tablist .tab.active{background: #355851;}
+#mapTab .tablist .tab:focus::after{content:"";position: absolute;top: 0;left: 0;z-index: 5;width: 100%;height: 100%;border:1px solid #ff0000;}
 #mapTab .tablist .tab+.tab{border-left: 1px solid #ccc;}
 #mapTab .tabpanel{display: none;margin-top: 60px;}
 #mapTab .tabpanel.active{display: block;}
 #mapTab .tabpanel img{width: 750px;height: 422px;float:left;}
 #mapTab .tabpanel p{float: left;width: 391px;font-weight: 500;font-size: 16px;margin-left: 35px;}
     /* 무기 변경점 */
-#container > #patchWeapon{text-align: center;color: #000;text-align: left;height: 105vh;}
+#container > #patchWeapon{text-align: center;color: #000;text-align: left;height: 105vh;min-height:980px;}
 #patchWeapon .area{padding-top: 60px;}
 #patchWeapon .weapon_list{margin-top: 75px;}
 #patchWeapon .weapon_list li+li{margin-top: 40px;}

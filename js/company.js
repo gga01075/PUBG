@@ -9,7 +9,8 @@ $(function(){
       };
     //기업이념
     if($(window).scrollTop() > $("#companyWort").offset().top - 500){
-        $('#companyWort svg .cls-2').addClass('svg_start');
+        gsap.to("#companyWort svg .cls-2", {delay:0, duration: 5,strokeDashoffset: 0, ease:Power3.easeOut});
+
          gsap.to("#companyWort ul li:nth-of-type(odd) .worth_txt", {delay:5,left: 0, opacity:1, duration: 0.5, ease:Power3.easeOut});
          gsap.to("#companyWort ul li:nth-of-type(even) .worth_txt", {delay:5,right: 0, opacity:1, duration: 0.5, ease:Power3.easeOut});  
       }

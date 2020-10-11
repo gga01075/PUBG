@@ -5,7 +5,7 @@
     <title> PUBG </title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="/images/common/favicon.ico" />
+    <link rel="icon" href="../images/common/favicon.ico" type="image/x-icon">
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/gsap.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
@@ -49,7 +49,7 @@
     <div id="skip">
         <a href="#container">본문 바로가기</a>
     </div>
-    <header id="header">
+    <header id="header" class="min_w">
         <div class="header_top">
             <h1 class="logo"><a href="index.html"><img src="images/common/index_logo.png" alt="PUBG"></a></h1>
         </div>
@@ -64,7 +64,7 @@
                         <li><a href="#">CHI</a></li>
                     </ul>
                 </div>
-                <button class="login_btn" type="button" aria-haspopup="true" title="로그인 팝업창 열기" data-href="#login_box">LOGIN</button>
+                <button class="login_btn" type="button" aria-haspopup="dialog" title="로그인 팝업창 열기" data-href="#login_box">LOGIN</button>
                 <a class="buynow" href="buynow.html">BUY NOW</a>
             </div>
             <nav id="gnb">
@@ -283,8 +283,8 @@
        
     </footer>
     <!-- 모달팝업창 -->
-    <div id="login_box">
-            <strong>Sign In</strong>
+    <div id="login_box" role="dialog" aria-modal="true" aria-labelledby="modal_tit">
+            <strong id="modal_tit">Sign In</strong>
             <form action="#" method="post">
                 <div>
                     <label for="uid"><img src="images/common/user.png" alt="아이디"  ></label>
@@ -292,7 +292,7 @@
                 </div>
                 <div>
                     <label for="upw"><img src="images/common/lock.png" alt="비밀번호"></label>
-                    <input type="password" id="upw" name="uid"> 
+                    <input type="password" id="upw" name="uid" maxlength="12"> 
                 </div>
                 <button type="submit">Sign In</button>
             </form>
