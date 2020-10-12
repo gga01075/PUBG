@@ -1,10 +1,10 @@
 @charset "utf-8";
 /* 서브페이지 공통스타일 */
-.h2_area{position: relative;z-index: 1;height: 630px;padding-top: 345px;font-family: jersey;font-size: 70px;text-align: center;text-shadow:3px 3px 2px rgba(0,0,0,.8);letter-spacing: 5px;z-index: 1;background: #000;box-sizing:border-box;}
+.h2_area{position: relative;width: 100vw;z-index: 1;height: 630px;min-height:630px;padding-top: 345px;font-family: jersey;font-size: 70px;text-align: center;text-shadow:3px 3px 2px rgba(0,0,0,.8);letter-spacing: 5px;z-index: 1;background: #000;box-sizing:border-box;}
 .h2_area::after{content:"";position: absolute;z-index: -1;top: 0;left: 0;width: 100%;height: 100%;opacity:.7;}
-.league_h2::after{background: url("../images/league/league_background3.jpg") -600px -50px;}
-.company_h2::after{background: url("../images/introduce/company-h2-bg.jpg");}
-.patchnote_h2::after{background: url("../images/patchnote/patch-h2-bg.jpg") no-repeat center / cover;}
+.league_h2::after{background: url("../images/league/league_background3.jpg") no-repeat -600px -50px;}
+.company_h2::after{background: url("../images/introduce/company-h2-bg.jpg") no-repeat center;}
+.patchnote_h2::after{background: url("../images/patchnote/patch-h2-bg.jpg") no-repeat center;}
 #container > section{width: 100%;height: calc(100vh - 60px);min-height:860px;}
 #container section h3{font-family: koverwatch, "맑은 고딕", "Malgun Gothic", sans-serif;font-size: 50px;letter-spacing: 1px;font-weight: 400;}
 
@@ -190,7 +190,7 @@
 
 /* company */
     /* #companyIntr */
-.companyIntr_bg{top: 0;left: 0;width: 100%;height: 100%;} 
+.companyIntr_bg{top: 0;left: 0;width:100%;height: 100%;} 
 .companyIntr_bg .left_bg{float: left;width: 50%;height: 100%;background: #000;} 
 .companyIntr_bg .right_bg{float: left;width: 50%;height: 100%;background: url("../images/introduce/company-repre-bg.jpg") no-repeat center / cover;}
 #companyIntr .area{z-index: 1;padding-top:60px;} 
@@ -200,7 +200,7 @@
 #companyIntr .area .companyIntr_txt q+p{font-weight: 300;line-height: 28px;}
 #companyIntr .area .companyIntr_txt p:last-of-type{margin-top: 30px;}
     /* #companyWort */
-#companyWort{background: url("../images/introduce/companyWort-bg.jpg") no-repeat center / cover;}
+#companyWort{background: url("../images/introduce/companyWort-bg.jpg") no-repeat center / cover;overflow: hidden;}
 #companyWort svg{width: 500px;height: 300px;position: absolute;top: calc(50% - 170px);left: calc(50% - 238px);z-index: 1;}
 #companyWort ul{height: 100%;}
 #companyWort ul li{float:left;width: 50%;height: 50%;position: relative;-moz-box-sizing: border-box;box-sizing: border-box;} 
