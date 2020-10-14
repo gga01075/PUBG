@@ -8,11 +8,11 @@
 .read_more:hover::before,.read_more:hover::after,.read_more:focus::before,.read_more:focus::after{width:100%;transition:.3s ease all;}
 
 /* .cnt1 */
-.cnt1{position:relative;width: 100vw;height: 100vh;overflow: hidden;min-height: 920px;}
+.cnt1{position:relative;width: 100%;height: 100vh;overflow: hidden;min-height: 920px;}
 .cnt1 iframe{position: absolute;top:-10%;left:-10%;width: auto;height:auto;min-width:130%;min-height: 130%;pointer-events: none;}
 
 /* .cnt2 */
-.cnt2{position: relative;width: 100vw;height:calc(100vh - 60px);overflow: hidden;color: #fff;background: #000000;min-height: 860px;}
+.cnt2{position: relative;width: 100%;height:calc(100vh - 60px);overflow: hidden;color: #fff;background: #000000;min-height: 860px;}
 .cnt2 #cnt2Bg{position: absolute;top:0;width: 200%;height: 100%;left:50%;transform:translateX(-50%);z-index: 0;}
 .cnt2 #cnt2Bg>div{position: absolute;top:0;width: 50%;height: 100%;-moz-box-sizing: border-box;box-sizing: border-box;transform: skew(30deg);overflow: hidden;}
 .cnt2 #cnt2Bg>.league_bg{left: 0;}
@@ -67,7 +67,7 @@
 .cnt3 .banner_txt p:last-of-type{font-size: 18px;font-weight: 400;margin-top: 10px;}
 .cnt3 .banner_txt strong,.cnt3 .banner_txt p:last-of-type{text-indent: 3px;}
 /* .cnt4 #storeNew */
-#storeNew{width: 100vw;height:calc(100vh - 60px);color: #000;min-height:860px;}
+#storeNew{width: 100%;height:calc(100vh - 60px);color: #000;min-height:860px;}
 #storeNew .store_bg{width: 100%;height: 300px;left: 0;bottom: 0;background: #dde4ec;}
 #storeNew .area{position: relative;padding-top: 100px;}
 #storeNew h2{font-size: 50px;margin-bottom: 35px;}

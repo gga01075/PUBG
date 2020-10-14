@@ -90,7 +90,7 @@ caption{width: 1px;height: 1px;border:none;margin: -1px;overflow: hidden;clip:re
 body{font-family:SCDream, "맑은 고딕","Malgun Gothic", sans-serif; font-size: 16px;color: #fff;word-break: keep-all;}
 
 /* #header */
-#header{position:fixed;top: 0;left: 0;z-index: 900;background: rgba(154, 169, 170,.5);font-size: 22px;color: #000;width: 100vw;}
+#header{position:fixed;top: 0;left: 0;z-index: 900;background: rgba(154, 169, 170,.5);font-size: 22px;color: #000;width: 100%;}
 #header .header_top{position: relative;height: 85px;line-height: 85px;transition: all .3s;}
 #header .logo{position: absolute;left:calc(50% - 50px);top:0px;width: 100px;height: 58px;}
 #header .logo a{display: inline-block;height: 58px;}
@@ -159,7 +159,7 @@ body{font-family:SCDream, "맑은 고딕","Malgun Gothic", sans-serif; font-size
 
 
 /* #footer */
-#footer{background: rgb(0, 0, 0);color: #a5a290;font-family:SCDream;font-weight: 400;font-size: 12px;padding-bottom: 30px;width: 100vw;}
+#footer{background: rgb(0, 0, 0);color: #a5a290;font-family:SCDream;font-weight: 400;font-size: 12px;padding-bottom: 30px;width: 100%;}
 .footer_top{height: 60px;line-height: 60px;border-bottom: 1px solid #333;}
 .footer_top .sns_list{padding-top: 15px;}
 .footer_top .sns_list li{float:left;}
